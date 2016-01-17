@@ -1,0 +1,48 @@
+﻿// Color variables (appears count calculates by raw css)
+@color: #0065a9;
+@colorBg: darken(@color, 20%);
+@width1: 20px;
+@height0: 101px;
+
+@angle: 45deg;
+#ribbon {
+    background-color: @color;
+    float: left;
+    height: 100px;
+    left: -20px;
+    position: relative;
+    top: 40px;
+    width: 960px;
+
+    &:after {
+        background-color: @colorBg;
+        content: '';
+        height: @height0;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        -moz-transform: skewY(-@angle);
+        -ms-transform: skewY(-@angle);
+        -o-transform: skewY(-@angle);
+        -webkit-transform: skewY(-@angle);
+        transform: skewY(-@angle);
+        width: @width1;
+        z-index: -1;
+    }
+
+    &:before {
+        background-color: @colorBg;
+        content: '';
+        height: @height0;
+        left: 0;
+        position: absolute;
+        top: 10px;
+        -moz-transform: skewY(@angle);
+        -ms-transform: skewY(@angle);
+        -o-transform: skewY(@angle);
+        -webkit-transform: skewY(@angle);
+        transform: skewY(@angle);
+        width: @width1;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0573)https://www.fyrebox.com/wixgame?cacheKiller=1453054181531&compId=comp-ihh9jbmh&deviceType=desktop&instance=5ggBu_StMGorsYxHm4uvhLWWYuCX4cFUPEq0iw-IxhA.eyJpbnN0YW5jZUlkIjoiMTNhOTJhZjQtOWYzZi00YzJlLWFkYjEtYzA2Yjc2YmQ3ZDdlIiwic2lnbkRhdGUiOiIyMDE2LTAxLTE3VDE4OjA5OjQxLjc2NVoiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiI3My41MS41LjEzMS80MjA1NCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIyMTliYmUyNy1iMTI3LTQxNDUtOTUyZi0wNGM5NWI5MTY3NTEiLCJzaXRlT3duZXJJZCI6IjJjYjdjYjE5LTIxMWUtNDdlZi1iZjliLWJkY2YyMWUwNTIwYyJ9&locale=en&viewMode=site&width=472 -->
+<html class="wf-museosans-n3-active wf-freightdisplaypro-n4-active wf-grafolitascript-n4-active wf-kremlinprowebsemiexp-n4-active wf-myriadstdtilt-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style wix-style="" type="text/css">.Title{ font:normal normal normal 35px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Menu{ font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 25px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-L{ font:normal normal normal 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-M{ font:normal normal normal 30px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-S{ font:normal normal normal 25px/1.4em futura-lt-w01-light,sans-serif; } .Body-L{ font:normal normal normal 17px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-S{ font:normal normal normal 14px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-XS{ font:italic normal normal 10px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style>
+    <title> My Wix Quiz</title>
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+    <meta name="keywords" content="custom online quizzes, quiz, multiple choice questions quiz, true false quiz, quiz games, custom games, quiz creator, custom quiz, online marketing">
+    <meta name="description" content="How Happy are You? Find out Here!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, follow">
+    <meta charset="UTF-8">
+    <script src="ffp6ccg.js" async=""></script><script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="110902f08fab58e1c22330351f4be6a7">  </script>
+    <!-- ----------------------------------->
+    <!-- Define the styles for the quizzes-->
+    <!-- ----------------------------------->
+    <style>
+      .gateformcontainer{
+         background-color:rgba(51,140,204,1);
+      }
+      .text_color{
+        color: #ffffff
+      }
+      .text_font{
+        font-family:museo-sans
+      }
+      .submit_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color: rgba(51,140,204,1);
+        font-size:30px
+      }
+      .successful_msg{
+        top:0px;
+        left:0px;
+        width:700px;
+        height:200px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .unsuccessful_msg{
+        top:0px;
+        left:0px;
+        width:700px;
+        height:200px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .successful_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .unsuccessful_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .text-center {
+        text-align: center; }
+      
+      .gateformcontainer {
+        width: 550px;
+        position: relative;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid white;
+        margin-top: 15px; }
+        .gateformcontainer p {
+          font-size: 22px;
+          margin: 5px 0; }
+      
+      *, :after, :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      
+      p#notification, #errornotification {
+        font-size: 17px;
+        background-color: red;
+        margin: 0 15px;
+        text-align: center; }
+      
+      .game_instructions, .banner, .successful_msg, .unsuccessful_msg {
+        position: absolute;
+        text-align: center;
+        display: table;
+        border-radius: 5px; }
+        .game_instructions p, .banner p, .successful_msg p, .unsuccessful_msg p {
+          margin: 25px 15px;
+          line-height: 1.1em; }
+        .game_instructions span, .banner span, .successful_msg span, .unsuccessful_msg span {
+          display: table-cell;
+          cursor: text;
+          vertical-align: middle; }
+      
+      .successful_msg p, .unsuccessful_msg p {
+        margin: 15px; }
+      .successful_msg .col-md-6, .unsuccessful_msg .col-md-6 {
+        margin-bottom: 10px; }
+      .successful_msg .col-md-6:first-child, .successful_msg .col-md-6:nth-child(3), .unsuccessful_msg .col-md-6:first-child, .unsuccessful_msg .col-md-6:nth-child(3) {
+        padding-right: 5px; }
+      .successful_msg .col-md-6:nth-child(2), .successful_msg .col-md-6:nth-child(4), .unsuccessful_msg .col-md-6:nth-child(2), .unsuccessful_msg .col-md-6:nth-child(4) {
+        padding-left: 5px; }
+      
+      #loadingimg {
+        display: none;
+        text-align: center;
+        margin-top: 200px; }
+      
+      .buttoncommons {
+        border: 1px solid #fff;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        text-decoration: none;
+        display: table;
+        text-align: center; }
+        .buttoncommons span {
+          display: table-cell;
+          vertical-align: middle;
+          cursor: pointer; }
+      
+      .form-group {
+        margin-bottom: 15px; }
+        .form-group label {
+          text-align: left;
+          width: 100%;
+          font-size: 18px;
+          display: inline-block;
+          margin-bottom: 5px; }
+      
+      .row:after {
+        clear: both; }
+      
+      .row:before, .row:after {
+        display: table;
+        content: " "; }
+      
+      .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+      
+      .input-lg {
+        font-size: 18px;
+        line-height: 1.33;
+        height: 46px;
+        border-radius: 5px; }
+      
+      .gamecontainer {
+        width: 700px;
+        height: 400px;
+        overflow: hidden;
+        padding-top: 1px;
+        margin-top: -1px; }
+      
+      #uleadform_bgnd, #sleadform_bgnd, #endscreen {
+        display: none; }
+      #endscreen {
+        position: relative; }
+      .form-group {
+        margin-bottom: 0; }
+      
+      .col-md-6 {
+        width: 50%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both; }
+      
+      .linktofyb {
+        position: absolute;
+        top: 372px;
+        left: 0;
+        padding: 5px 8px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-size: 16px;
+        font-style: italic; }
+      
+      .verticalAlign {
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer; }
+      
+      .spacer10 {
+        height: 10px;
+        width: 100%;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block; }
+      
+      .spacer15 {
+        height: 15px;
+        width: 100%;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block; }
+      
+      .addthis_sharing_toolbox {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        display: none; }
+      
+    </style>
+    <style>
+      .bgnd_color{
+        background:#3797db;
+      }
+    </style>
+    <script src="wix.min(2).js"></script>
+    <script src="watch.min.js" crossorigin="anonymous"></script>
+    <!--script(src='/javascripts/games/crafty.js')-->
+    <!--script(src='/javascripts/parse.min.js')-->
+    <!--script(src='/javascripts/games/utils.js')-->
+    <!--script(src='/javascripts/games/game#{gAssets.game_type}.js')-->
+    <script src="game1.min.js" crossorigin="anonymous"></script>
+    <script>
+      if(typeof Parse === 'undefined' || Parse==null){
+        location.reload(true);
+      }else{
+        Parse.initialize("9D7XESjfHdPnzRni6tvua5mUZJsgyQZ3vPRrljM0", "d32vb2awqjcXzDhko1LynlgCYwkCOYXW4RWn55fN");
+        //Parse.initialize("f2ZCCwjs2w52WB3tlR0jSwGBO0zcTsrtMmhGCJ5r", "J72SYezmgo0ogtgg2dghR3L8Zs0uTTWO2wOa9g4E");
+      }
+      
+      
+    </script>
+    <!-- ------------------------------------------------------>
+    <!--Script to load the font-->
+    <!-- ------------------------------------------------------->
+    <script>
+      (function(d) {
+      var config = {
+        kitId: 'ffp6ccg',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+      
+    </script>
+    <!-- ---------------------------------------------->
+    <!--Script to load game assets and start the quiz-->
+    <!-- ----------------------------------------------->
+    <script>
+      var gameAssets = {"_id":"5657f24cf173f30700309eeb","slug":"my-wix-quiz_8XxbM7j999","game_type":1,"game_name":"My Wix Quiz","game_id":"8XxbM7j999","wixid":"13a92af4-9f3f-4c2e-adb1-c06b76bd7d7e","compid":"comp-ihh9jbmh","oid":"LEL7BLbqpA","language_idx":0,"__v":0,"facebook_pixel":"","pdf_report":false,"missing_fields_msg":"At least one required field is missing.","alphabet":"ABCDEFGHIJKLMNOPQRSTUVWXYZ","email_invalid_msg":"This email address is not valid","thank_u_msg":"Thank you!","social_btns":true,"is_rule_based":false,"image_quiz":false,"skip_resultpage_unsuccessful":false,"skip_resultpage_successful":false,"skip_instructions":false,"progressbar":false,"timelimit":30,"use_timelimit":false,"list_emails_notif":"theapricityproject@gmail.com","notification_email":true,"display_create":true,"display_logo":true,"on_mobile":false,"collect_phone_unsuccessful":false,"collect_address_unsuccessful":false,"collect_email_unsuccessful":true,"collect_name_unsuccessful":false,"collect_phone_successful":false,"collect_address_successful":false,"collect_email_successful":true,"collect_name_successful":false,"capture_leads_unsuccessful":false,"capture_leads_successful":false,"retry_btn_unsuccessful":true,"retry_btn_successful":false,"record_analytics":false,"label_input_2":{"text":"Email"},"label_input_1":{"text":"Name"},"ind_analytics_gate":{"opacity":1,"text":"Fill the form below to play our game"},"record_ind_analytics":false,"retry_on_unsuccessful":true,"result_page_unsuccessful":"","result_page":"","outcome_on_unsuccessful_result":false,"outcome_on_successful_result":false,"view_result_on_unsuccessful":false,"view_result_on_successful":false,"redirect_on_successful":false,"redirect_on_unsuccessful":false,"unsuccessful_send_btn":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"Send","height":70,"width":300,"left":200,"top":295},"successful_send_btn":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"Send","height":70,"width":300,"left":200,"top":295},"unsuccessful_msg":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"Oh no, you have lost! You can always retry!","height":200,"width":700,"left":0,"top":0},"successful_msg":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"You answered [mostly] the most. A is the highest possible happiness rating. You can always improve your happiness! Visit \"introduction\" for more info. ","height":200,"width":700,"left":0,"top":0},"submit_btn":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"Start","height":70,"width":300,"left":200,"top":295},"unsuccessful_btn":{"opacity":1,"bgnd_color":"#338ccc","link":"","text_size":30,"text":"Click Here","height":70,"width":300,"left":200,"top":295},"successful_btn":{"opacity":1,"bgnd_color":"#338ccc","link":"","text_size":30,"text":"Try Again?","height":70,"width":300,"left":200,"top":295},"answer_delay":2,"use_passmark":false,"display_correct_answer":false,"display_result_sign":false,"hidden_words":[],"scores":[],"answers_MCQ":[["almost every day","more than once a week","a few times a month","never"],["almost every day","more than once a week","a few times a month","never"],["never","a few times a month","more than once a week","almost every day"],["never","a few times a month","more than once a week","almost every day"],["almost every day","more than once a week","a few times a month","never"],["very satisfied","somewhat satisfied","somewhat dissatisfied","very dissatisfied"],["very satisfied","somewhat satisfied","somewhat dissatisfied","very dissatisfied"],["very satisfied","somewhat satisfied","somewhat dissatisfied","very dissatisfied"],["very satisfied","somewhat satisfied","somewhat dissatisfied","very dissatisfied"],["very satisfied","somewhat satisfied","somewhat dissatisfied","very dissatisfied"]],"scenario_links":[],"scenario_outcome":[],"scenario_ends_bgnds":[],"scenario_ends":[],"scenario_steps":[],"hidden_sentence":[],"correct_answers":[],"killer_questions":[],"answers_yn":[],"randomise_qsts":false,"questions":["In the past month, how often have you felt joyous, exuberant, inspired, or awestruck? ","In the past month, how often have you felt serene, grateful, or relaxed?","In the past month, how often have you felt angry, anxious, or afraid?","In the past month, how often have you felt sad, guilty, or lonely?","In the past month, how often have you helped someone? ","How satisfied do you feel with the relationships in your life?","How satisfied do you feel with your work/academic life?","How satisfied do you feel with your leisure time?","How satisfied do you feel with yourself as a person?","How satisfied do you feel with the conditions of your life?"],"next_btn":{"bgnd_color":"#338ccc","text_size":30,"text":"","height":70,"width":300,"left":200,"top":295},"no_btn":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"","height":60,"width":300,"left":360,"top":280},"yes_btn":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"","height":60,"width":300,"left":40,"top":280},"game_instructions":{"opacity":1,"bgnd_color":"#338ccc","text_size":30,"text":"How Happy are You? Find out Here!","height":200,"width":700,"left":0,"top":0},"start_btn":{"bgnd_color":"#338ccc","text_size":30,"text":"Start","height":70,"width":300,"left":200,"top":295},"text_size":30,"text_font":"museo-sans","text_color":"#ffffff","bgnd_color":"#3797db","bgnd_images":["","","","","","","","","",""],"bgnd_image":"","banner":{"opacity":1,"bgnd_color":"#338ccc"},"daily_plays":0,"weekly_plays":0,"number_plays":57,"createdAt":"2015-11-27T06:03:56.482Z"};
+      var results = [];
+      var globalScale = 1;
+      var craftyrun = false;
+      
+      function resizegates(){
+       var swidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+       globalScale = swidth / 700;
+       if(globalScale>1) globalScale = 1;
+       var elem = document.getElementById('gameContainer');
+       elem.style.transformOrigin = elem.style.webkitTransformOrigin = elem.style.mozTransformOrigin = "0 0";
+       elem.style.transform = elem.style.webkitTransform = elem.style.mozTransform = "scale("+globalScale+")";
+       elem.style.width = Math.floor(700*globalScale)+"px";
+       elem.style.height = Math.floor(400*globalScale)+"px";
+       if(craftyrun) Crafty.viewport.reload();
+      }
+      
+      function startGame(){
+        Crafty.init(700, 400);
+        Crafty.scene("loadingScene");
+        craftyrun = true;
+      }
+      if(window.addEventListener){
+        window.addEventListener("resize", resizegates, false);
+        window.addEventListener("orientationchange", function(){
+         resizegates();
+         //location.reload(true);
+        }, false);
+      }
+    </script>
+    <!--Facebook Conversion Pixel-->
+  <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}.tk-kremlin-pro-web-semi-exp{font-family:"kremlin-pro-web-semi-exp",serif;}.tk-freight-display-pro{font-family:"freight-display-pro",sans-serif;}.tk-myriad-std-tilt{font-family:"myriad-std-tilt",sans-serif;}.tk-grafolita-script{font-family:"grafolita-script",sans-serif;}</style><link rel="stylesheet" href="l" media="all"><link type="text/css" rel="stylesheet" href="latin.css"></head>
+  <body style="margin:0 0">
+    <div id="gameContainer" style="margin: 0px auto; transform-origin: 0px 0px 0px; transform: scale(0.674286); width: 472px; height: 269px;">
+      <div id="cr-stage" style="margin-top: -4px; width: 700px; height: 400px; overflow: hidden; position: relative; background: rgb(55, 151, 219);"><div style="position: absolute; z-index: 10; transform-style: preserve-3d; transform: scale(1, 1); left: 0px; top: 0px;"><div id="ent3" class="2D DOM Text Mouse obj" style="position: absolute; visibility: hidden; width: 100px; height: 150px; z-index: 10; opacity: 1; transform: translate3d(300px, 180px, 0px); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 150px; line-height: normal; font-family: sans-serif;"></div><div id="ent4" class="SmallLogo 2D DOM smalllogo Sprite Mouse obj" style="position: absolute; cursor: pointer; visibility: visible; width: 35px; height: 25px; z-index: 0; opacity: 1; transform: translate3d(665px, 375px, 0px); background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAZCAYAAAC7OJeSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA0RJREFUeNpi+P//f/9/KoPPX779r+mcQbI+JkZGxkIGBoYDDFQCX75+Zyiq72cw0FYlWS8LlA4E4vtALEBIw8Wrt7GKi4sJMUiICjN0Tl3EcOfBE4YmM32capEBNzcng4qCDJjNCBMEhpIBkDpPSLNTSBZW8eaydLAjFq7aCubvWzMNp1pkYKCtxtDXWIASMgzA6LoAdBAoyvoJGSAhJszg7mAB5/MAfaesKAMOFeToyk4MAdO4wM4DJ7BGE8xBE4AOsgcyA/A6Bhgd8WHeKGJT569Bsfjo6YsMwd5OcP7tw3cZVG2V8UY5Exa7EoH4AqmJD2Q5LNhBABZdMPDjy0+GM6vwpwIMxwBD5wPUQR9IccyLV2/BtD4wF4FCDcRHdpCcoQzDkXknGX4CHUW0Y2DpB0gVEnIAKMFiC+7YYFdwCIEcA5P7+PwT2CFnVl0gzTFQBy0AUgvwOWbt1n0Y0QECT65tZyjLiQWza7tmgNMSzBGn8UQVEz7LgA7Cm35gvkd30M9v7xjYfj1mcHe0ADukvnoaOAGD5YChc3n7NdIdg1QgfsBe2n4D0xeu3kJxIAi8f36VwdXWCFygNbZmMfBL8sHVPD7/lDzHAEPnAZCaiC/NIJc3WiqSYPa/v78YlMSYGEqSnBn+fXuKkq1f3n5NnmOA5Y4CkMonpmoAlStf3z+C8z+9vs3A+Pkaw6c3t4G5SRou/opcxwDBelx1Fiw7Izvm7ZPzKGkHBL5/esHAzsNO0CImAqEyH5QMiClnQGmF+e9HcPSQC5jwOCQBSCUQqqPQcxE2wMrOg1LYiamKEu8YaA1OsMK0NtVHSsyPGTj5JLCq4xNVBWbte3C+GlodhdMxQIeA0sd8Yto2oGIflINgtfSW/ReAFqugqGHnEmJ4fI6B4fI2SNkCyuImYQZEhwzR6QTkkL7GQriDQDX3keu/GcSVbMGhJCpvzvDquhzDjs6DcIcEtfngTMwsaKFSQKj5gA5Ahdqsnip4PQRy0M79MgwJ7p4Ml+pOguskUBoBRQ0oRPDlKhZS0wmu9k15dhyGuJWrIeltYGg62U+sJlDxT0yTktgiAT1k1hOTYGGJlpoAuXhgBPWbgHQBwyAAAAEGAOICzKZN5ApuAAAAAElFTkSuQmCC&quot;) no-repeat;"></div><div id="ent5" class="2D DOM Text obj" style="position: absolute; display: table; text-align: center; border-radius: 5px; visibility: visible; width: 700px; height: 200px; z-index: 0; opacity: 1; transform: translate3d(0px, 0px, 0px); color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 30px; line-height: normal; font-family: museo-sans; background-color: rgb(51, 140, 204);"><div style="display:table-cell;vertical-align: middle; padding:0 10px">How Happy are You? Find out Here!</div></div><div id="ent6" class="2D DOM Text Mouse obj" style="position: absolute; display: table; border: 1px solid rgb(255, 255, 255); cursor: pointer; border-radius: 5px; text-align: center; visibility: visible; width: 300px; height: 70px; z-index: 0; opacity: 1; transform: translate3d(200px, 295px, 0px); color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 30px; line-height: normal; font-family: museo-sans; background-color: rgb(51, 140, 204);"><div style="display:table-cell;vertical-align: middle; padding:0 10px">Start</div></div></div></div>
+          <div id="endscreen" class="gamecontainer bgnd_color">
+            <div id="message_box">
+              <p id="message" class="text_color text_font text-center"></p>
+              <div class="spacer15"></div>
+              <div id="leadformbox">
+                <form id="leadform">
+                  <p id="notification" class="text_color text_font"></p>
+                  <div id="allfields" class="row">
+                    <div id="collect_email" class="col-md-6">
+                      <input id="email" style="" name="email" type="text" placeholder="Email" class="input-lg form-control">
+                    </div>
+                    <div id="collect_fname" class="col-md-6">
+                      <input id="fname" style="" name="name" type="text" placeholder="Name" class="input-lg form-control">
+                    </div>
+                    <div id="collect_address" class="col-md-6">
+                      <input id="address" style="" name="address" type="text" placeholder="Address" class="input-lg form-control">
+                    </div>
+                    <div id="collect_phone" class="col-md-6">
+                      <input id="phone" style="" name="phone" type="text" placeholder="Phone" class="input-lg form-control">
+                    </div>
+                  </div>
+                  <input name="game_id" type="hidden" value="8XxbM7j999">
+                  <input name="oid" type="hidden" value="LEL7BLbqpA">
+                </form>
+              </div>
+            </div><a id="leadform_btn" href="" class="buttoncommons text_font text_color"> <span id="leadform_btn_span"></span></a>
+            <div id="sharebox" data-url="https://www.fyrebox.com/show/1/LEL7BLbqpA/8XxbM7j999" data-title="" class="addthis_sharing_toolbox"></div><a href="https://www.fyrebox.com/?utm_source=fyrebox&amp;utm_medium=game&amp;utm_campaign=create_free" target="_blank" class="linktofyb">Create a quiz for free with Fyrebox</a>
+          </div>
+      <div id="loadingimg"><img src="data:image/png;base64,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"></div>
+    </div>
+    <!-- ------------------------------------------------------>
+    <!-- Script to resize on load-->
+    <!-- ------------------------------------------------------->
+    <script>resizegates();</script>
+    <!-- ------------------------------------------------------>
+    <!--Script to handle the form submission at the beginning-->
+    <!-- ------------------------------------------------------->
+    <script>
+      window.onload = function() {
+        startGame();
+      }
+    </script>
+  
+</body></html>

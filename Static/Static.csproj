@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{CE5F5F32-8E4B-450D-9831-A66DCE87AAFF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="index.html" />
+    <Content Include="mdl-templates\assets\android-desktop.png" />
+    <Content Include="mdl-templates\assets\app-icon.png" />
+    <Content Include="mdl-templates\assets\button_degradation.png" />
+    <Content Include="mdl-templates\assets\clippy.swf" />
+    <Content Include="mdl-templates\assets\codepen-logo.png" />
+    <Content Include="mdl-templates\assets\codepen.js" />
+    <Content Include="mdl-templates\assets\colors.svg" />
+    <Content Include="mdl-templates\assets\compindex.png" />
+    <Content Include="mdl-templates\assets\compindex_2x.png" />
+    <Content Include="mdl-templates\assets\components.css" />
+    <Content Include="mdl-templates\assets\components.js" />
+    <Content Include="mdl-templates\assets\components.png" />
+    <Content Include="mdl-templates\assets\components.svg" />
+    <Content Include="mdl-templates\assets\components_2x.png" />
+    <Content Include="mdl-templates\assets\components_mo.svg" />
+    <Content Include="mdl-templates\assets\comp_badges.png" />
+    <Content Include="mdl-templates\assets\comp_buttons.png" />
+    <Content Include="mdl-templates\assets\comp_cards.png" />
+    <Content Include="mdl-templates\assets\comp_layout.png" />
+    <Content Include="mdl-templates\assets\comp_loading.png" />
+    <Content Include="mdl-templates\assets\comp_menus.png" />
+    <Content Include="mdl-templates\assets\comp_sliders.png" />
+    <Content Include="mdl-templates\assets\comp_tables.png" />
+    <Content Include="mdl-templates\assets\comp_textfields.png" />
+    <Content Include="mdl-templates\assets\comp_toggles.png" />
+    <Content Include="mdl-templates\assets\comp_tooltips.png" />
+    <Content Include="mdl-templates\assets\customize.png" />
+    <Content Include="mdl-templates\assets\customize.svg" />
+    <Content Include="mdl-templates\assets\customizer.css" />
+    <Content Include="mdl-templates\assets\customizer.js" />
+    <Content Include="mdl-templates\assets\customizer.png" />
+    <Content Include="mdl-templates\assets\customize_2x.png" />
+    <Content Include="mdl-templates\assets\customize_mo.svg" />
+    <Content Include="mdl-templates\assets\demos\dog.png" />
+    <Content Include="mdl-templates\assets\demos\image_card.jpg" />
+    <Content Include="mdl-templates\assets\demos\transparent.jpg" />
+    <Content Include="mdl-templates\assets\demos\welcome_card.jpg" />
+    <Content Include="mdl-templates\assets\faq\subscribe-single-issue.png" />
+    <Content Include="mdl-templates\assets\favicon.png" />
+    <Content Include="mdl-templates\assets\github_white_24.svg" />
+    <Content Include="mdl-templates\assets\google-services.png" />
+    <Content Include="mdl-templates\assets\header.jpg" />
+    <Content Include="mdl-templates\assets\header_2x.jpg" />
+    <Content Include="mdl-templates\assets\icons.svg" />
+    <Content Include="mdl-templates\assets\ie.css" />
+    <Content Include="mdl-templates\assets\img-1.png" />
+    <Content Include="mdl-templates\assets\img-2.png" />
+    <Content Include="mdl-templates\assets\index.js" />
+    <Content Include="mdl-templates\assets\ios-desktop.png" />
+    <Content Include="mdl-templates\assets\logo.png" />
+    <Content Include="mdl-templates\assets\logo.svg" />
+    <Content Include="mdl-templates\assets\main.css" />
+    <Content Include="mdl-templates\assets\main.js" />
+    <Content Include="mdl-templates\assets\mo.svg" />
+    <Content Include="mdl-templates\assets\prism-bash.min.js" />
+    <Content Include="mdl-templates\assets\prism-css.min.js" />
+    <Content Include="mdl-templates\assets\prism-default.css" />
+    <Content Include="mdl-templates\assets\prism-javascript.min.js" />
+    <Content Include="mdl-templates\assets\prism-markup.min.js" />
+    <Content Include="mdl-templates\assets\prism.js" />
+    <Content Include="mdl-templates\assets\rich-media-gallery.png" />
+    <Content Include="mdl-templates\assets\shapes.svg" />
+    <Content Include="mdl-templates\assets\sliders_degradation.png" />
+    <Content Include="mdl-templates\assets\snippets.js" />
+    <Content Include="mdl-templates\assets\styles.png" />
+    <Content Include="mdl-templates\assets\styles.svg" />
+    <Content Include="mdl-templates\assets\styles_2x.png" />
+    <Content Include="mdl-templates\assets\styles_mo.svg" />
+    <Content Include="mdl-templates\assets\table_degradation.png" />
+    <Content Include="mdl-templates\assets\template-preview.png" />
+    <Content Include="mdl-templates\assets\templates.png" />
+    <Content Include="mdl-templates\assets\templates.svg" />
+    <Content Include="mdl-templates\assets\templates\android-dot-com.jpg" />
+    <Content Include="mdl-templates\assets\templates\android-dot-com_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\article.jpg" />
+    <Content Include="mdl-templates\assets\templates\article_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\blog.jpg" />
+    <Content Include="mdl-templates\assets\templates\blog_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\dashboard.jpg" />
+    <Content Include="mdl-templates\assets\templates\dashboard_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\general.jpg" />
+    <Content Include="mdl-templates\assets\templates\general_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\product.jpg" />
+    <Content Include="mdl-templates\assets\templates\product_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates\text-only.jpg" />
+    <Content Include="mdl-templates\assets\templates\text-only_2x.jpg" />
+    <Content Include="mdl-templates\assets\templates_2x.png" />
+    <Content Include="mdl-templates\assets\templates_mo.svg" />
+    <Content Include="mdl-templates\material.css" />
+    <Content Include="mdl-templates\material.js" />
+    <Content Include="mdl-templates\material.min.css" />
+    <Content Include="mdl-templates\material.min.js" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\android-logo-white.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\android-logo.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\andy.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\auto-on.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\devices.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\more-from-1.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\more-from-2.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\more-from-3.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\more-from-4.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\nexus6-on.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\nexus9-on.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\slide01.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\tv-on.jpg" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\wear-black-on.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\wear-silver-on.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\images\wear.png" />
+    <Content Include="mdl-templates\templates\android-dot-com\index.html" />
+    <Content Include="mdl-templates\templates\android-dot-com\material.min.css" />
+    <Content Include="mdl-templates\templates\android-dot-com\styles.css" />
+    <Content Include="mdl-templates\templates\article\images\android-desktop.png" />
+    <Content Include="mdl-templates\templates\article\images\favicon.png" />
+    <Content Include="mdl-templates\templates\article\images\ios-desktop.png" />
+    <Content Include="mdl-templates\templates\article\index.html" />
+    <Content Include="mdl-templates\templates\article\material.min.css" />
+    <Content Include="mdl-templates\templates\article\styles.css" />
+    <Content Include="mdl-templates\templates\blog\entry.html" />
+    <Content Include="mdl-templates\templates\blog\images\android-desktop.png" />
+    <Content Include="mdl-templates\templates\blog\images\avatar.png" />
+    <Content Include="mdl-templates\templates\blog\images\bg_1024.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\bg_2048.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\bg_2880.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\co1.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\co2.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\coffee.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\favicon.png" />
+    <Content Include="mdl-templates\templates\blog\images\ios-desktop.png" />
+    <Content Include="mdl-templates\templates\blog\images\logo.png" />
+    <Content Include="mdl-templates\templates\blog\images\road.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\road_big.jpg" />
+    <Content Include="mdl-templates\templates\blog\images\shopping.jpg" />
+    <Content Include="mdl-templates\templates\blog\index.html" />
+    <Content Include="mdl-templates\templates\blog\material.min.css" />
+    <Content Include="mdl-templates\templates\blog\styles.css" />
+    <Content Include="mdl-templates\templates\dashboard\images\android-desktop.png" />
+    <Content Include="mdl-templates\templates\dashboard\images\dog.png" />
+    <Content Include="mdl-templates\templates\dashboard\images\favicon.png" />
+    <Content Include="mdl-templates\templates\dashboard\images\ios-desktop.png" />
+    <Content Include="mdl-templates\templates\dashboard\images\user.jpg" />
+    <Content Include="mdl-templates\templates\dashboard\index.html" />
+    <Content Include="mdl-templates\templates\dashboard\material.min.css" />
+    <Content Include="mdl-templates\templates\dashboard\styles.css" />
+    <Content Include="mdl-templates\templates\index.html" />
+    <Content Include="mdl-templates\templates\text-only\images\android-desktop.png" />
+    <Content Include="mdl-templates\templates\text-only\images\favicon.png" />
+    <Content Include="mdl-templates\templates\text-only\images\ios-desktop.png" />
+    <Content Include="mdl-templates\templates\text-only\index.html" />
+    <Content Include="mdl-templates\templates\text-only\material.min.css" />
+    <Content Include="mdl-templates\templates\text-only\styles.css" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mdl-templates\bower.json" />
+    <Content Include="mdl-templates\LICENSE" />
+    <Content Include="mdl-templates\material.min.css.map" />
+    <Content Include="mdl-templates\material.min.js.map" />
+    <Content Include="mdl-templates\package.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Static</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52850</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52850/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

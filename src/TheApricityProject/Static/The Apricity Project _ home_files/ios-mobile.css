@@ -1,0 +1,16 @@
+.bar {
+    position: absolute;
+    background: #222;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+}
+
+.bar.bottom {
+    bottom: 0;
+}
