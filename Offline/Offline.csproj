@@ -29,6 +29,10 @@
     <Content Include="back-to-top\js\main.js" />
     <Content Include="back-to-top\js\modernizr.js" />
     <Content Include="index.html" />
+    <Content Include="network.html" />
+    <Content Include="network_files\jquery-2.1.4.min.js" />
+    <Content Include="network_files\vis.css" />
+    <Content Include="network_files\vis.js" />
     <Content Include="The Apricity Project _ home_files\28e77d0b179d4121891d847ed43de6cc.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_05e7e37d1a15baaa49b676e47dc82b01.html" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_26bdbe83cccb41f1b2bd43c0f42a7fbd.png" />
