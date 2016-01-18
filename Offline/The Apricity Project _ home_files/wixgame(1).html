@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0573)https://www.fyrebox.com/wixgame?cacheKiller=1453158045568&compId=comp-ihh9jbmh&deviceType=desktop&instance=TMyxF3sqvk2-sg0yejZd8Od3kUmSLRLpTHaCcwM9ySs.eyJpbnN0YW5jZUlkIjoiMTNhOTJhZjQtOWYzZi00YzJlLWFkYjEtYzA2Yjc2YmQ3ZDdlIiwic2lnbkRhdGUiOiIyMDE2LTAxLTE4VDIzOjAwOjMzLjA3M1oiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiI3My41MS41LjEzMS80NzQ0OSIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiI5ZmQ2MmQxOS1iNDQ4LTQ2NzItYTJhYi03MTNkN2RmZmNlYmYiLCJzaXRlT3duZXJJZCI6IjJjYjdjYjE5LTIxMWUtNDdlZi1iZjliLWJkY2YyMWUwNTIwYyJ9&locale=en&viewMode=site&width=472 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style wix-style="" type="text/css">.Title{ font:normal normal normal 35px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Menu{ font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 25px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-L{ font:normal normal normal 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-M{ font:normal normal normal 30px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Heading-S{ font:normal normal normal 25px/1.4em futura-lt-w01-light,sans-serif; } .Body-L{ font:normal normal normal 17px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-S{ font:normal normal normal 14px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-XS{ font:italic normal normal 10px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style>
+    <title> My Wix Quiz</title>
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+    <meta name="keywords" content="custom online quizzes, quiz, multiple choice questions quiz, true false quiz, quiz games, custom games, quiz creator, custom quiz, online marketing">
+    <meta name="description" content="How Happy are You? Find out Here!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, follow">
+    <meta charset="UTF-8">
+    <script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="110902f08fab58e1c22330351f4be6a7">  </script>
+    <!-- ----------------------------------->
+    <!-- Define the styles for the quizzes-->
+    <!-- ----------------------------------->
+    <style>
+      .gateformcontainer{
+         background-color:rgba(51,140,204,1);
+      }
+      .text_color{
+        color: #ffffff
+      }
+      .text_font{
+        font-family:museo-sans
+      }
+      .submit_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color: rgba(51,140,204,1);
+        font-size:30px
+      }
+      .successful_msg{
+        top:0px;
+        left:0px;
+        width:700px;
+        height:200px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .unsuccessful_msg{
+        top:0px;
+        left:0px;
+        width:700px;
+        height:200px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .successful_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .unsuccessful_btn{
+        top:295px;
+        left:200px;
+        width:300px;
+        height:70px;
+        background-color:rgba(51,140,204,1);
+        font-size:30px;
+      }
+      .text-center {
+        text-align: center; }
+      
+      .gateformcontainer {
+        width: 550px;
+        position: relative;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid white;
+        margin-top: 15px; }
+        .gateformcontainer p {
+          font-size: 22px;
+          margin: 5px 0; }
+      
+      *, :after, :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      
+      p#notification, #errornotification {
+        font-size: 17px;
+        background-color: red;
+        margin: 0 15px;
+        text-align: center; }
+      
+      .game_instructions, .banner, .successful_msg, .unsuccessful_msg {
+        position: absolute;
+        text-align: center;
+        display: table;
+        border-radius: 5px; }
+        .game_instructions p, .banner p, .successful_msg p, .unsuccessful_msg p {
+          margin: 25px 15px;
+          line-height: 1.1em; }
+        .game_instructions span, .banner span, .successful_msg span, .unsuccessful_msg span {
+          display: table-cell;
+          cursor: text;
+          vertical-align: middle; }
+      
+      .successful_msg p, .unsuccessful_msg p {
+        margin: 15px; }
+      .successful_msg .col-md-6, .unsuccessful_msg .col-md-6 {
+        margin-bottom: 10px; }
+      .successful_msg .col-md-6:first-child, .successful_msg .col-md-6:nth-child(3), .unsuccessful_msg .col-md-6:first-child, .unsuccessful_msg .col-md-6:nth-child(3) {
+        padding-right: 5px; }
+      .successful_msg .col-md-6:nth-child(2), .successful_msg .col-md-6:nth-child(4), .unsuccessful_msg .col-md-6:nth-child(2), .unsuccessful_msg .col-md-6:nth-child(4) {
+        padding-left: 5px; }
+      
+      #loadingimg {
+        display: none;
+        text-align: center;
+        margin-top: 200px; }
+      
+      .buttoncommons {
+        border: 1px solid #fff;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        text-decoration: none;
+        display: table;
+        text-align: center; }
+        .buttoncommons span {
+          display: table-cell;
+          vertical-align: middle;
+          cursor: pointer; }
+      
+      .form-group {
+        margin-bottom: 15px; }
+        .form-group label {
+          text-align: left;
+          width: 100%;
+          font-size: 18px;
+          display: inline-block;
+          margin-bottom: 5px; }
+      
+      .row:after {
+        clear: both; }
+      
+      .row:before, .row:after {
+        display: table;
+        content: " "; }
+      
+      .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+      
+      .input-lg {
+        font-size: 18px;
+        line-height: 1.33;
+        height: 46px;
+        border-radius: 5px; }
+      
+      .gamecontainer {
+        width: 700px;
+        height: 400px;
+        overflow: hidden;
+        padding-top: 1px;
+        margin-top: -1px; }
+      
+      #uleadform_bgnd, #sleadform_bgnd, #endscreen {
+        display: none; }
+      #endscreen {
+        position: relative; }
+      .form-group {
+        margin-bottom: 0; }
+      
+      .col-md-6 {
+        width: 50%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both; }
+      
+      .linktofyb {
+        position: absolute;
+        top: 372px;
+        left: 0;
+        padding: 5px 8px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-size: 16px;
+        font-style: italic; }
+      
+      .verticalAlign {
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer; }
+      
+      .spacer10 {
+        height: 10px;
+        width: 100%;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block; }
+      
+      .spacer15 {
+        height: 15px;
+        width: 100%;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block; }
+      
+      .addthis_sharing_toolbox {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        display: none; }
+      
+    </style>
+    <style>
+      .bgnd_color{
+        background:#3797db;
+      }
+    </style>
+    <script src="wix.min(2).js"></script>
+    <script src="watch.min.js" crossorigin="anonymous"></script><link type="text/css" rel="stylesheet" href="latin.css"></head></html>

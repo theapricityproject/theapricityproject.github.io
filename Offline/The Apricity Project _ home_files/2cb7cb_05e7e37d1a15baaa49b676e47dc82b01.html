@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)http://www.theapricityproject.org.usrfiles.com/html/2cb7cb_05e7e37d1a15baaa49b676e47dc82b01.html -->
+<html class=" js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <!-- <link rel="stylesheet" href="css/splitText.css" /> -->
+		<style type="text/css">
+		/*! normalize.css v1.1.0 | MIT License | git.io/normalize */dl,h3,menu,ol,p,pre,ul{margin:1em 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}button,html,input,select,textarea{font-family:sans-serif}body,figure,form{margin:0}a:focus{outline:dotted thin}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:after,q:before{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ol,nav ul{list-style:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+		</style>
+		
+		<style type="text/css">	.letter-measure,.splitText>div{cursor:default}.splitText{width:600px;float:left;margin-top:10px;margin-left:20px;font-size:20px}.splitText>div{white-space:pre-line;float:left;margin-right:5px}.blank,.letter-measure{margin-right:0!important}.split-lines{white-space:nowrap!important}.blank{white-space:pre!important}
+		</style>
+		
+		<style type="text/css">
+	   fieldset,hr{border:0;padding:0}.split-sentences,p{font-family:Anton,sans-serif}.hidden,.invisible,.split-sentences{visibility:hidden}#tutorial,a.download-button{text-decoration:none;font-weight:700}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border-top:1px solid #ccc;margin:1em 0}img{vertical-align:middle}fieldset{margin:0}#blockBlack2>.controls>div,#blockBlack>.controls>div,#blockGrey>.controls>div{border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF!important}.next,.play{border-radius:50%}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}body{font-size:1em;line-height:1.4;margin:0}.split-sentences{position:absolute;font-weight:700;margin:0 0 0 -100px;padding:0;width:800px;text-align:center;font-size:120px;top:0}#menu{width:100%;background-color:#222;height:60px;position:fixed;top:0;left:0;margin-bottom:20px}.menuItem{background-color:#105CB6;color:#fff;text-align:center;float:left;position:relative;margin-right:10px;height:40px;line-height:40px;font-size:20px;cursor:pointer;top:10px;padding-left:10px;padding-right:10px}#blockOrange,#blockRed{color:#1e1e1e;text-align:center}#blockBlack,#blockBlack2,#blockBlue,#blockGreen,#blockGrey,#blockOrange,#blockRed,#blockWhite,#finalBlock,#mainContainer{width:100%;height:100%;position:fixed}#type{padding-right:0}#mainContainer{float:left}#finalBlock{text-align:center}#blockGreen{background-color:#1f3b08;color:#FFFFFF;text-align:center}#blockGrey{background-color:#222;color:#FFFFFF;text-align:center}#blockBlue{background-color:#2c539e;color:#FFFFFF;text-align:center}#blockNavyBlue{background-color:transparent;color:#FFFFFF;width:100%;height:100%;position:fixed;text-align:center}#blockRed{background-color:#cf0404}#blockOrange{background:#ffa84c;background:-moz-linear-gradient(top,#ffa84c 0,#ff7b0d 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ffa84c),color-stop(100%,#ff7b0d));background:-webkit-linear-gradient(top,#ffa84c 0,#ff7b0d 100%);background:-o-linear-gradient(top,#ffa84c 0,#ff7b0d 100%);background:-ms-linear-gradient(top,#ffa84c 0,#ff7b0d 100%);background:linear-gradient(to bottom,#ffa84c 0,#ff7b0d 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d', GradientType=0 )}#blockWhite{background-color:#FFFFFF;text-align:center}#blockBlack{background-color:#010101;text-align:center}#blockBlack2{background-color:#000;text-align:center}.splitText{top:100px;left:50%;position:relative;margin-left:-300px!important}#blockRed>.splitText{font-size:62px!important;font-family:Anton sans-serif}#blockOrange>.splitText{margin-right:100%;font-size:30px}#blockBlue>.splitText,#blockNavyBlue>.splitText{font-size:40px!important}#blockBlack2>.splitText,#blockBlack>.splitText{font-size:40px!important;color:#FFFFFF}#blockGreen>.splitText,#blockGrey>.splitText{font-size:37px!important}#blockGreen>.splitText{border-left-color:#FFFFFF!important}#blockGrey>.controls>div{background:#FFFFFF!important}#blockBlack>.controls>.arrowleft:before,#blockGrey>.controls>.arrowleft:before{border-right-color:#FFFFFF!important}#blockBlack>.controls>div{background:#FFFFFF!important}#blockBlack2>.controls>.arrowleft:before{border-right-color:#FFFFFF!important}#blockBlack2>.controls>div{background:#FFFFFF!important}#blockGreen>.controls>div{border-color:#FFFFFF!important}.blocks>.controls>div{border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF!important;background:#FFFFFF!important}.blocks>.controls>.arrowleft:before{border-right-color:#FFFFFF!important}.justSplit{background-color:#2c539e;color:#FFFFFF;margin-left:5px!important}.controls{position:absolute;top:50px;left:50%;width:190px;margin-left:-95px;height:50px}.controls>div{float:left;margin-right:10px}.play{width:2em;height:2em;position:relative;border:.3em solid #2c2c2c}.play::before{position:absolute;content:"";top:.25em;left:.75em;width:0;height:0;border-top:.8em solid rgba(44,44,44,0);border-bottom:.8em solid transparent;border-left:.8em solid #2C2C2C}.next{width:2em;height:2em;position:relative;border:.3em solid #2c2c2c}.next::after,.next::before{position:absolute;content:"";top:.29em;width:0;height:0;border-top:.7em solid rgba(44,44,44,0);border-bottom:.7em solid transparent;border-left:.7em solid #2C2C2C}.next::before{left:1em}.next::after{left:.5em}.back{width:2em;height:2em;border-radius:50%;position:relative;border:.3em solid #2c2c2c}.back::after,.back::before{position:absolute;top:.29em;width:0;height:0;border-top:.7em solid rgba(44,44,44,0);border-bottom:.7em solid transparent;border-right:.7em solid #2C2C2C;content:""}.back::before{right:1em}.back::after{right:.5em}.arrowleft{background:#2C2C2C;font-size:12px;position:relative;width:1em;height:1em;margin-right:-.7em;top:14px;margin-left:10px}.arrowleft::before{bottom:-.66666666em;right:.8em;position:absolute;border-right:1.2em solid #2C2C2C;border-top:1.2em solid rgba(44,44,44,0);border-bottom:1.2em solid rgba(44,44,44,0);content:""}a.download-button{display:block;padding:15px 20px 10px;color:#FFF;font-size:28px;background:url(http://i.imgur.com/wt7UJ.png) 92% 50% no-repeat #33A700;border:2px solid #339410;-webkit-box-shadow:3px 3px 5px #000;-moz-box-shadow:3px 3px 5px #000;box-shadow:3px 3px 5px #000;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-transition:350ms;-moz-transition:350ms;-o-transition:350ms;transition:350ms}a.download-button:hover{background-color:#267C00;background-position:90% 50%}a.download-button span{font-size:14px;display:block;margin-top:2px}#finalContainer{position:fixed;margin:-100px auto 0 -155px;left:50%;top:50%}.home{font-size:9px;height:1em;width:.5em;margin-top:1em;margin-left:-1em;border-bottom:none;border-right:1.5em solid #2C2C2C;border-left:1.5em solid #2C2C2C;border-top:1.4em solid #2C2C2C;position:relative}.home::before{border-left:2.4em solid transparent;position:absolute;content:"";top:-2.8em;right:-2.1em;width:0;height:0;border-right:2.4em solid transparent;border-bottom:1.5em solid #2C2C2C}.file,.file::before{border-bottom:.2em solid #2C2C2C}.file{font-size:16px;border-top:.2em solid #2C2C2C;position:relative;width:1em;height:2em;border-right:.2em solid #2C2C2C}.file::after,.file::before{left:-.5em;position:absolute;content:""}.file::before{bottom:-.2em;width:.5em;height:1.72em;border-left:.2em solid #2C2C2C}.file::after{top:-.2em;border-right:.5em solid #2C2C2C;border-top:.5em solid transparent}#finalContainer{width:500px;text-align:center;margin-left:-250px}.home{margin:45px auto 20px}#tutorial{text-align:center;margin:20px auto 0 -5px;position:relative;color:#1e1e1e}#hoverOver{position:fixed;background-color:#000;opacity:.8;border-radius:0 10px 10px 0;width:200px;float:left;min-height:300px}.ir,.visuallyhidden{border:0;overflow:hidden}#menuList{color:#ff7400;text-align:center;cursor:pointer}#hoverOver>p{color:#FF7400;text-align:center;width:100%;cursor:default;font-family:sans-serif!important}#hoverOver>#menu_finalBlock{cursor:pointer}#menuList>li{color:#ff7400;text-align:left}.file{margin:0 auto}.ir{background-color:transparent}.ir:before{content:"";display:block;width:0;height:150%}.hidden{display:none!important}.visuallyhidden{clip:rect(0 0 0 0);height:1px;margin:-1px;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@media print{blockquote,img,pre,tr{page-break-inside:avoid}*{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+	   </style>
+     
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+		
+        <script src="modernizr.js"></script>
+       <script src="TweenMax.min(1).js"></script>
+       
+       <link href="css" rel="stylesheet" type="text/css">
+    </head>
+    <body>              
+        <div id="mainContainer">
+        	<div id="blockNavyBlue" class="blocks" style="transform: translate();">
+        		<p class="splitText isSplit" id="989"><div class="split-sentences endOfSentence"> BE KIND.</div> <div class="split-sentences"> KINDNESS.</div> <div class="split-sentences endOfSentence"> SPREADS.</div> <div class="split-sentences endOfSentence"> HAPPINESS.</div></p>
+      
+        	</div>
+        	
+        </div>
+       
+        <script src="jquery.min(2).js"></script>
+        <!-- <script src="js/plugins.js"></script> -->
+        <!-- <script src="js/example.js"></script> -->
+		<!-- <script src="js/SplitTextPlugin.js" type="text/javascript"></script> -->
+		<script>var selectedSlide = 'blockWhite';
+$(document).ready(function(){
+	
+	var machinegun = $("#machinegun").splitText({
+		'type':'sentences',
+		'animation':'machinegun'
+	});
+	setTimeout( machinegun.animate, 10000 );
+	
+	
+});</script>
+
+<script>
+ ///////////////////////////////      PLUGIN         //////////////////////////////
+ 
+(function($){ 
+	
+	$.fn.splitText = function(options){
+		
+		// options //
+		// type = 'lines','words','letters', 'sentences' (new) 
+		// animation = 'explode','slide','opacity','3D','colorize','smoke','glowOnHover','scramble', 'machinegun' (new)
+		// justSplit = 'lines','words','letters', 'sentences' (new)
+		// duration = ...in seconds
+		// colorize = color hex (if effect is colorize) or glowOnHover
+		// scale    = boolean
+		// useLite  = boolean
+		// useCSS   = boolean
+		
+		// default
+		var opts = {
+			'type'		: 'lines',
+			'animation'	: 'explode',
+			'justSplit' : false,
+			'duration'	: 1.0,
+			'scale'		: true,
+			'useLite'	: false,
+			'colorize'	: null,
+			'useCSS'	: false
+		};
+		
+		if(options == null || options == undefined || options == '' || (options.type !== 'words' && options.type !== 'lines' && options.type !== 'letters' && options.type !== 'sentences')){
+			options = opts;
+		}
+		
+		if(options.duration == undefined){
+			options.duration = 1.0;
+		}
+		
+		// element is the outer container //
+		var element = $(this);
+		//// setup the element ////
+		
+		if( element.hasClass('isSplit') ){
+			
+			element.empty();
+			element.text( $('#hidden_'+element.attr('id')).text() );
+			
+		}
+		else{
+			element.attr('id',String(Math.round(Math.random()*1000+42)));
+			element.addClass('isSplit');
+		}
+		
+		var userInput = element.text();
+		var TMax = options.useLite==false?new TimelineMax():new TimelineLite();
+		
+		var initialText = element.text();
+		
+		var hiddenId = $('#hidden_'+element.attr('id'));
+		
+		var parentID = "hidden_"+element.attr('id');
+		
+		if( document.getElementById(parentID) == undefined){
+			
+			$('body').append('<p class="hiddenText" id="hidden_'+element.attr('id')+'"></p>');
+			$(".hiddenText").text(userInput).css({'display':'none'});
+			
+			///// SET CSS /////////////
+			
+			if($(".blank").css('white-space') !== 'pre' || options.useCSS == false){ // check if style exists //
+				//console.log('style doesnt exist - add it!'+$(".blank").css('white-space'));
+		
+				$("<style rel='splitStyle'>"+
+				".splitText{max-width: 600px;float: left;margin-top: 01px;margin-left: 20px;font-size:20px;}"+
+				".splitText>div{white-space:pre-line;float:left;margin-right:5px;cursor:default;}"+
+				".letter-measure{margin-right:0 !important;cursor:default;}"+
+				".split-lines{white-space:nowrap !important;}"+
+				".blank{margin-right:0px !important;white-space: pre !important;}"+
+				"</style>").appendTo(document.documentElement);
+			}
+		}
+		
+		
+		//// SET ANIMATION TYPE ///
+		
+		console.log(options.type);
+		if(options.type=='lines'){
+			
+			var result = splitWords(userInput);
+			
+			element.html(result);
+		
+			var obj = splitLines();
+			
+			if(options.justSplit == true){
+				return {'id':element.attr('id'),'value':obj};
+			}
+			
+			element.empty();
+			
+			$.each(obj,function(index,value){
+				
+				var item = "<div class='split-lines'>"+value.text+"</div>";
+				
+				element.append(item);
+				
+			});
+		
+		}
+		else if(options.type=='words'){
+			var result = splitWords(initialText);
+			
+			if(options.justSplit == true){
+				return {'id':element.attr('id'),'value':result};
+			}
+			
+			element.empty();
+			element.html(result);
+		}
+		else if(options.type=='letters'){
+			var result = splitLetters(initialText);
+			
+			if(options.justSplit == true){
+				return {'id':element.attr('id'),'value':result};
+			}
+			
+			element.empty();
+			element.html(result);
+		}
+		else if(options.type == 'sentences'){
+			var result  = splitSentences(initialText);
+			
+			if(options.justSplit == true){
+				return { 'id':element.attr('id'), 'value':result };
+			}
+			
+			element.empty();
+			element.html(result);
+		}
+		
+		
+		/////////////////////////////////////////////////////////////////////
+		
+		function splitLetters(userInput){
+			
+			var arr = userInput.split("");
+			
+			for(var i=0;i<arr.length;i++) { 
+				
+				if(arr[i] == " "){
+						arr[i] = '<div class="letter-measure blank">' + arr[i] + '</div>';
+				}
+				else{
+		      
+		      		if(!arr[i].match(/\s\n\t\r/g) && arr[i]!="") arr[i] = '<div class="letter-measure">' + arr[i] + '</div>';
+		     
+		     	}
+		   }
+		   
+		   return arr.join(" ");
+		}
+		
+		function splitWords(userInput, justSplit){
+			  var a = userInput.replace(/\n/g, " \n<br/> ").split(" ");
+   
+   			   if(justSplit == true){
+   			   		$.each(a, function(i, val) { 
+			      		if(!val.match(/\n/) && val!="") a[i] = val;
+			   		});
+			   		
+			   		return a;
+   			   }
+   			   
+			   $.each(a, function(i, val) { 
+			      if(!val.match(/\n/) && val!="") a[i] = '<div class="word-measure">' + val + '</div>';
+			   });
+			
+			   var arr = a.join(" ");
+			   return arr;	
+		}
+		
+		function splitLines(userInput){
+		   
+		   var count = element.children(".word-measure").length;
+		   var lineAcc = [element.children(".word-measure:eq(0)").text()];
+		   var textAcc = [];
+		   for(var i=1; i<count; i++){
+			      var prevY = element.children(".word-measure:eq("+(i-1)+")").offset().top;
+			   if(element.children(".word-measure:eq("+i+")").offset().top==prevY){
+			         lineAcc.push(element.children(".word-measure:eq("+i+")").text());
+			   } 
+			   else {
+			     textAcc.push({text: lineAcc.join(" "), top: prevY});
+			     lineAcc = [element.children(".word-measure:eq("+i+")").text()];
+			   }
+		   }
+		   textAcc.push({text: lineAcc.join(" "), top: element.children(".word-measure:last").offset().top});
+		   return textAcc;
+		   
+		}
+		
+		function splitSentences(userInput){
+			
+			
+			
+			 var regExp = /[^\.!\?]+[\.!\?]+/g;
+			 
+			 var words = splitWords(userInput,true);
+			 
+			 var sentencesArr = String(userInput).match(regExp);
+			 var textAcc = new Array();
+			 
+			 for(var i = 0; i < sentencesArr.length; i++){
+			 	 textAcc.push({ 'text' : sentencesArr[i] });
+			 }
+			 
+			 console.log(words);
+			 
+			 textAcc = new Array();
+			 words = sentencesArr;
+			 for(var j = 0; j < words.length; j++ ){
+			  	var word = words[j];
+			    isSentenceEnd = regExp.test(word);
+			    if(isSentenceEnd){
+			    	words[j] = "<div class='split-sentences endOfSentence'>" + word + "</div>";
+			    }
+			    else{
+			    	words[j] = "<div class='split-sentences'>" + word + "</div>";
+			    }
+			    
+			    textAcc.push(words[j]);
+			    
+			 }
+			 
+			 var arr = words.join(" ");
+			 return arr;
+			
+			
+		}
+	
+
+		 this.animate = function() {
+		 	
+		 	
+		 	if(options.animation == 'glowOnHover'){
+		 		TMax = new TimelineMax({align:'start'});
+		 		var nChildren = element.children().length;
+		 		
+		 		var item;
+		 		TMax = new TimelineMax({align:'start'});
+		 		element.children().each(function(index,value){
+			         
+			         	item = $(this);
+			         	
+			         	$(this).on('mouseenter',function(){
+			         		
+			         		TweenMax.to($(this), options.duration, getAnimation(options));
+			         		
+			         	});
+			         	
+			         	$(this).on('mouseleave',function(){
+			         		TweenMax.to($(this), options.duration, {'text-shadow':'none',color:'#000'});
+			         	});
+			  });
+			  
+			  return true;
+		 	}
+		 	else if(options.animation == 'scramble'){
+		 		
+		 		TMax = new TimelineMax({align:'start'});
+		 		var nChildren = element.children().length;
+		 		var angle = -Math.PI;
+		 		var center = getRandom(50,200);
+		 		var item;
+		 		var radius;
+		 		var dividers = 360/nChildren;
+		 		
+		 		TMax = new TimelineMax({align:'start'});
+		 		element.children().each(function(index,value){
+		 			
+		 			item = $(this);
+		 			var pos  = item.position();
+			        item.css({'left':pos.left,'top':pos.top});
+		 			radius = item.width()+Math.random()*100;
+		 			var x = Math.round(center+radius*Math.cos(angle));
+				    var y = Math.round(center+radius*Math.sin(angle));
+				   
+				    // rotation and rotating the text 90 degrees
+				    var turnangle = Math.atan2( y - getRandom(100,200), x - getRandom(100,200) ) * 180 / Math.PI + 90;
+		 			
+		 			TMax.insert(TweenMax.to(item,0.8,{'position':'absolute', 'left':x, 'top':y, rotation:turnangle, ease:Sine.easeOut}));
+		 			
+		 			var radians = dividers * (Math.PI / getRandom(10,270));
+		 			angle += radians;
+		 		});
+		 		
+		 		TMax.play();
+		 		
+		 		return true;
+		 	}
+		 	else if(options.animation == 'blackout'){
+		 		var item;
+		 		element.children().each(function(index,value){
+			         
+			         	item = $(this);
+			         	
+			         	$(this).on('mouseenter',function(){
+			         		TweenMax.to($(this), options.duration, {
+							    color: 'rgba(255, 255, 255, 0.8)',
+							    'background-clip': 'text'
+							 })
+			         		
+			         	});
+			         	
+			         	$(this).on('mouseleave',function(){
+			         		TweenMax.to($(this), options.duration, getBlackout());
+			         	});
+			  	});
+		 		
+		 	}
+		 	else if( options.animation == 'machinegun'){
+		 	    
+			    var tl = new TimelineMax({delay:0.6, repeat:0, repeatDelay:4});
+			    var time = 0;
+			    var item;
+			 	element.children().each(function(index, value){
+			 		 
+			 		 item = $(this);
+			 		 duration = Math.max(0.5, item.length * 0.08);
+			 		 console.log(duration);
+			 		
+			 		 var isSentenceEnd = item.hasClass('endOfSentence');
+			 		 if (isSentenceEnd) {
+				      duration += 0.6; //if it's the last word in a sentence, drag out the timing a bit for a dramatic pause.
+				    }
+				    //set opacity and scale to 0 initially. We set z to 0.01 just to kick in 3D rendering in the browser which makes things render a bit more smoothly.
+				    TweenLite.set(item, {autoAlpha:0, scale:0, z:0.01});
+				    //the SlowMo ease is like an easeOutIn but it's configurable in terms of strength and how long the slope is linear. See http://www.greensock.com/v12/#slowmo and http://api.greensock.com/js/com/greensock/easing/SlowMo.html
+				    tl.to(item, duration, {scale:1.2,  ease:SlowMo.ease.config(0.25, 0.9)}, time)
+				      //notice the 3rd parameter of the SlowMo config is true in the following tween - that causes it to yoyo, meaning opacity (autoAlpha) will go up to 1 during the tween, and then back down to 0 at the end. 
+						 	.to(item, duration, {autoAlpha:1, ease:SlowMo.ease.config(0.25, 0.9, true)}, time);
+				    time += duration - 0.05;
+				    if (isSentenceEnd) {
+				      time += 0.6; //at the end of a sentence, add a pause for dramatic effect.
+				    
+				  		}
+			 	
+			 	});
+			   
+			   
+		 		
+		 	}
+		 	else if(options.animation == 'matrix'){
+		 			
+		 		TMax = new TimelineMax({align:'start'});	
+		 		var parent = element.parent();
+		 		
+		 		element.children().each(function(index, value){
+		 			
+		 			var item = $(this);
+		 			var pos = $(this).position();
+		 		
+		 			 item.css({
+		 				 'top':getRandom(-800,0),
+		 				 'opacity':0,
+		 				 'left':pos.left
+		 			 });
+		 			
+		 			TMax.insert(TweenMax.to($(this),getRandom(0.5,2.5),getMatrixTo(pos.top)));
+		 			
+		 		});
+		 		
+		 		TMax.play();
+		 		
+		 		return true;
+		 	}
+		 	
+		 	
+		 	
+			if(options.type == 'letters'){  ////////////////////// ANIMATE LETTERS
+				TMax = new TimelineMax({align:'start'});
+				var nChildren = element.children().length;
+				
+				var item;
+				var pos;
+				for(var i=0;i<nChildren;i++){
+			         
+			         	item = element.children().eq(i);
+			         	
+			         	if(options.animation == 'explode'){
+			         		pos  = item.position();
+			         		item.css({'left':pos.left,'top':pos.top});
+			         		//console.log(pos.left,pos.top);
+						}			         	
+				        
+				        TMax.insert(TweenMax.to(item, options.duration, getAnimation(options)));
+				}
+				
+				TMax.play();
+			}
+			else if(options.type == 'words'){ /////////////////////  ANIMATE WORDS
+				TMax = new TimelineMax();
+				var nChildren = element.children().length;
+				var pos;
+				
+				for(var i=0;i<nChildren;i++){
+				
+				  if(options.animation == 'explode'){
+				  		pos  = element.children().eq(i).offset();
+						element.children().eq(i).css({'left':pos.left,'top':pos.top});
+				  }	
+				  TMax.insert(TweenMax.to(element.children().eq(i), options.duration, getAnimation(options)));
+				}
+				
+				TMax.play();
+			}
+			else if(options.type == 'lines'){ ///////////////// ANIMATE LINES
+				
+				TMax = new TimelineMax({align:'normal'});
+				$(".split-lines").each(function(){
+					$(this).css({'white-space':'nowrap'});
+					
+					if(options.animation == 'slide'){
+					var w = $(this).width();
+					
+					TMax.insert(
+						TweenMax.to($(this),options.duration,getAnimation(options,w)),"-=0.45");
+					}
+					else{
+						var pos  = $(this).offset();
+						$(this).css({'left':pos.left,'top':pos.top});
+						TMax.insert( TweenMax.to($(this), options.duration, getAnimation(options)) );
+					}
+				});	
+				
+				TMax.play();
+			}
+			
+			
+		};
+		
+		// ON REVERSE //
+		this.reverse = function(){
+			TMax.reverse();
+		};
+		
+		return this;
+	};
+		////////////////////////////////////////////////////////////////////////////////////////////
+		
+		
+		 var getAnimation = function(options,extra){
+			
+			if(options.animation == 'explode'){
+				return getExplode();
+			}
+			else if(options.animation == 'slide'){
+				return getSlide(extra);
+			}
+			else if(options.animation == 'opacity'){
+				return {autoAlpha:0};
+			}
+			else if(options.animation == '3D'){
+				return get3D();
+			}
+			else if(options.animation == 'colorize'){
+				return getColor();
+			}
+			else if(options.animation == 'smoke'){
+				return getSmoke();
+			}
+			else if(options.animation == 'typography3D'){
+				return getTypography3D();
+			}
+			else if(options.animation == 'blackout'){
+				return getBlackout();
+			}
+			else if(options.animation == 'glowOnHover'){
+				if(options.colorize == null || options.colorize == undefined){
+					options.colorize = '#FF0084';
+				}
+				return glowOnHover(options.colorize);
+			}
+			else if(options.animation == 'matrix'){
+				return getMatrixTo();
+			}
+			else{
+				return 'no animation selected!'
+			}
+			
+		}
+		
+		function getExplode(){
+			
+			return {
+					       position:'absolute', 
+					       left:getRandom(-1000,1000), 
+					       top:getRandom(-500,350), 
+					       fontSize:"+=35",
+					       ease:Circ.easeOut,
+					       autoAlpha:0
+				      };
+			
+		}
+		
+		function getMatrixTo(top){
+			
+			return {		
+							position:'absolute',
+							opacity:1,
+							top:top,
+							color:'#ffffff',
+							immediateRender:false,
+							ease:Circ.easeOut		
+			
+			};
+			
+		}
+		
+		function getSlide(w){
+					
+			return	{
+							autoAlpha:0,
+							marginLeft:w,
+							ease:Circ.easeIn
+						};
+		}
+		
+		function glowOnHover(color){
+			
+			return {
+				textShadow:"2px 2px 15px "+color,             
+    			color: color
+			}
+		}
+		
+		function getSmoke(){
+			
+			return {
+				textShadow:"0px 0px 15px #cdcdcd",
+    			color:"none" 
+			}
+		}
+		
+		function get3D(){
+			
+			return {
+					  	rotationY:getRandom(-270,360), 
+					  	top:80, 
+					  	transformOrigin: "50% 50% -80", 
+					  	rotationX:getRandom(-360, 600), 
+					  	rotationY:getRandom(-360, -600),
+					  	autoAlpha:0
+				  	};
+			
+		}
+		
+		function getBlackout(){
+			return {
+				 textShadow:"1px 1px 1px rgba(255, 255, 255, 0.5)",
+    			 color:"#000"
+			};
+		}
+		
+		function getTypography3D(){
+			
+			return {
+				'text-shadow': 
+			   '0 1px 0 #ccc,'+
+			   '0 2px 0 #c9c9c9,'+
+			   '0 3px 0 #bbb,'+
+			   '0 4px 0 #b9b9b9,'+
+			   '0 5px 0 #aaa,'+
+			   '0 6px 1px rgba(0,0,0,.1),'+
+			   '0 0 5px rgba(0,0,0,.1),'+
+			   '0 1px 3px rgba(0,0,0,.3),'+
+			   '0 3px 5px rgba(0,0,0,.2),'+
+			   '0 5px 10px rgba(0,0,0,.25),'+
+			   '0 10px 10px rgba(0,0,0,.2),'+
+			   '0 20px 20px rgba(0,0,0,.15)'
+			};
+			
+		}
+		
+		
+		///// helper /////
+		
+		function getColor(){
+			if(options.colorize == undefined || options.colorize == null){
+				return {color:Math.random() * 0xffffff};	
+			}
+			else{
+				{color:options.colorize};
+			}
+		}
+		
+		function getRandom(max, min){
+			return Math.floor(Math.random() * (1 + max - min) + min);
+		}	
+		
+		
+	
+})(jQuery); /// end of plugin ///
+</script>
+
+        
+       
+    
+
+<p class="hiddenText" id="hidden_989" style="display: none;"> BE KIND. KINDNESS. SPREADS. HAPPINESS.</p></body><style rel="splitStyle">.splitText{max-width: 600px;float: left;margin-top: 01px;margin-left: 20px;font-size:20px;}.splitText>div{white-space:pre-line;float:left;margin-right:5px;cursor:default;}.letter-measure{margin-right:0 !important;cursor:default;}.split-lines{white-space:nowrap !important;}.blank{margin-right:0px !important;white-space: pre !important;}</style></html>

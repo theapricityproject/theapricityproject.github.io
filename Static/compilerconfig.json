@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "ribbon.css",
+    "inputFile": "ribbon.less"
+  },
+  {
+    "outputFile": "ribbon2.css",
+    "inputFile": "ribbon2.scss"
+  }
+]
