@@ -102,11 +102,9 @@
             right: -9999px;
             margin: auto;
             opacity: 0.1;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            
             z-index: -100;
+
         }
 
         #hook {
@@ -187,12 +185,12 @@
             font-size: 24px;
             font-family: "Nunito", sans-serif;
             font-weight: 300;
-            margin: 0% 20%;
+            margin-right: 0px;
             position: fixed;
             top: 0;
-            right: 0;
+            
             bottom: 0;
-            left: 0;
+            left: 33%;
             padding: 20px 0;
             width: 220px;
             height: 30px;
@@ -306,7 +304,9 @@
 
 
     <script type="text/javascript">
-
+        if (screen.width <= 699) {
+            window.location = "http://m.theapricityproject.org";
+        }
         if (!Detector.webgl) Detector.addGetWebGLMessage();
 
         var container;
@@ -607,7 +607,7 @@
                 degrees = 1;
             }
         }
-        var states = ["Welcome to the Apricity Project!", "Our Mission is to Spread Happiness through Kindness.", "We Hope You'll Join Us. (:", "But before we get to the Acts of Kindess,", "Let's Cover the Facts."];
+        var states = ["Welcome to the Apricity Project!", "Our Mission is to Spread Happiness through Kindness.", "We Hope You'll Join Us. (:", "Before then, we'll cover the facts.", "Let's Begin."];
         rotateAnimation("halo", 100);
         var back = document.getElementById("container").style;
         var logo = document.getElementById("logo").style;
@@ -696,6 +696,7 @@
             else {
                 button.top = Math.round(window.innerHeight * (1.45 + .075) - window.scrollY) + "px";
             }
+            button.left = .33 * window.innerWidth - 250 + "px";
 
             //button.top = Math.max(window.innerHeight / 2, window.innerHeight- y) + "px";
             toolbar.height = Math.round(interpolate(0, 50, ratio)) + "px";//why so slow?
