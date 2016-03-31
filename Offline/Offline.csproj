@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <OutputPath>bin</OutputPath>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
@@ -17,6 +17,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -36,7 +37,6 @@
     <Content Include="text.html" />
     <Content Include="The Apricity Project _ home_files\28e77d0b179d4121891d847ed43de6cc.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_05e7e37d1a15baaa49b676e47dc82b01.html" />
-    <Content Include="The Apricity Project _ home_files\2cb7cb_26bdbe83cccb41f1b2bd43c0f42a7fbd.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_2a966279378a4c3a83ba9a2c1b159587.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_369ff4ac232d44558bfb034012e7b7a9.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_37dbfa089a1f44f48f474ff0cbccacd1.png" />
@@ -46,9 +46,7 @@
     <Content Include="The Apricity Project _ home_files\2cb7cb_6550eb8ad4494c399b1af368b04e75cc.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_6e20a81de33a4b29b9af5836435a139b.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_8efdf5c892906f7e4ac88b4496cee2ce.html" />
-    <Content Include="The Apricity Project _ home_files\2cb7cb_a2a2933be72242758ef1eb1f14dfdeed.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_dd08bdf2055f4829a0be1cfc51bd7799.png" />
-    <Content Include="The Apricity Project _ home_files\2cb7cb_e65c156c70984efda347bc35b1ffc4d6.png" />
     <Content Include="The Apricity Project _ home_files\2cb7cb_e681cfa739ec4b8da5bbfa2aaaa6e625.png" />
     <Content Include="The Apricity Project _ home_files\5e3d5fdf.app.js" />
     <Content Include="The Apricity Project _ home_files\743d1191a1e168d11670365df296afe1%281%29.png" />
@@ -75,11 +73,13 @@
     <Content Include="The Apricity Project _ home_files\color.min.js" />
     <Content Include="The Apricity Project _ home_files\components.min.js" />
     <Content Include="The Apricity Project _ home_files\core.min.js" />
+    <Content Include="The Apricity Project _ home_files\css" />
     <Content Include="The Apricity Project _ home_files\DrawSVGPlugin.min.js" />
     <Content Include="The Apricity Project _ home_files\e316f544f9094143b9eac01f1f19e697.png" />
     <Content Include="The Apricity Project _ home_files\experiment.js" />
     <Content Include="The Apricity Project _ home_files\fonts.min.js" />
     <Content Include="The Apricity Project _ home_files\fPKQ45-5MAo.html" />
+    <Content Include="img\icon.png" />
     <Content Include="The Apricity Project _ home_files\index.html" />
     <Content Include="The Apricity Project _ home_files\instantsearch-desktop.v.1.01.js" />
     <Content Include="The Apricity Project _ home_files\jquery-2.1.4.min.js" />
@@ -90,11 +90,13 @@
     <Content Include="The Apricity Project _ home_files\layout.min.js" />
     <Content Include="The Apricity Project _ home_files\lodash.min%281%29.js" />
     <Content Include="The Apricity Project _ home_files\lodash.min.js" />
+    <Content Include="img\logo.png" />
     <Content Include="The Apricity Project _ home_files\main-r.min.js" />
     <Content Include="The Apricity Project _ home_files\messages_en.js" />
     <Content Include="The Apricity Project _ home_files\mobileIEFix.css" />
     <Content Include="The Apricity Project _ home_files\modernizr.js" />
     <Content Include="The Apricity Project _ home_files\mousetrap.min.js" />
+    <Content Include="The Apricity Project _ home_files\pop" />
     <Content Include="The Apricity Project _ home_files\react-dom-server.min.js" />
     <Content Include="The Apricity Project _ home_files\react-dom.min.js" />
     <Content Include="The Apricity Project _ home_files\react-with-addons.min.js" />
@@ -128,15 +130,13 @@
     <Content Include="The Apricity Project _ home_files\wix_instantsearchplus_style-V2.css" />
     <Content Include="The Apricity Project _ home_files\wix_instantsearchplus_widget-V2.html" />
     <Content Include="The Apricity Project _ home_files\wix_instantsearchplus_widget-V2.js" />
+    <Content Include="The Apricity Project _ home_files\wix_widget_load" />
+    <Content Include="The Apricity Project _ home_files\wix_widget_load%281%29" />
     <Content Include="The Apricity Project _ home_files\www-embed-player-webp-vfl9bv8mt.css" />
     <Content Include="The Apricity Project _ home_files\zepto.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="The Apricity Project _ home_files\css" />
-    <Content Include="The Apricity Project _ home_files\pop" />
-    <Content Include="The Apricity Project _ home_files\wix_widget_load" />
-    <Content Include="The Apricity Project _ home_files\wix_widget_load%281%29" />
     <Content Include="back-to-top\.DS_Store" />
     <Content Include="back-to-top\js\.DS_Store" />
     <Content Include="back-to-top\partials\_layout.scss" />
@@ -152,7 +152,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="stop\" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

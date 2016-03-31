@@ -1,0 +1,744 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="shortcut icon" href="ficon.ico" type="image/x-icon" />
+    <title>The Apricity Project</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            background-color: white;
+            margin: 0px;
+            overflow-x: hidden;
+            font-family: Monospace;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .important{
+            background: #3F7FBF;
+            color: white;
+        }
+
+        p{ 
+            width: 33%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            z-index: 5;
+            font-family: 'Century Gothic';
+            font-size: 20px;
+            color: #333333;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            font-weight:normal;
+            background: #e0e0e0;
+            
+            background-size: 200% 100%;
+            background-position: right bottom;
+            padding:10px 10px 10px 10px;
+            z-index: 1000;
+            
+            
+        }
+
+
+        p:hover,p:focus,p:active {
+-webkit-transform: scale(1.1);
+            transform: scale(1.1);        }
+
+        
+        #logo {
+            position:fixed;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            
+            z-index: 1000;
+        }
+        #title {
+            position:fixed;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            
+            z-index: 10;
+            top: 55%;
+        }
+
+        .content{
+            width: 33%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            z-index: 5;
+            display: block;
+            height:auto;
+        }
+        
+        #halo {
+            position:fixed;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+
+           
+            
+            opacity: 0.1;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom:0;
+            
+            z-index: -100;
+        }
+
+        #hook{
+            position:fixed;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+            margin-top:25%;
+            font-family: 'Century Gothic';
+            font-size: 30px;
+           
+            
+       
+            left: 0;
+            right: 0;
+            top:0;
+            bottom:0;
+            z-index: 1000;
+
+
+        }
+        #tool {
+	        position: fixed;
+            border: none;
+            width: 100%;
+	        height: 50px;
+            top: 0px;
+            right:0px;
+	        background: black;
+            vertical-align: top;
+            z-index: 100;
+        }
+                
+
+        #container {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e4877+0,4584b4+100 */
+            background: #1e4877; /* Old browsers */
+            background: -moz-linear-gradient(top,  hsl(212,60%,29%) 0%, hsl(206,45%,49%) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4877', endColorstr='#4584b4',GradientType=0 ); /* IE6-9 */
+            width: 100%;
+            height:100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            border: 0;
+            z-index: -100;
+            
+        }
+        @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+body { font-family: "Nunito", sans-serif; font-size: 24px;}
+a    { text-decoration: none; }
+p    { text-align: center; }
+sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+.button
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: none;
+
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  
+  margin: 0% 20%;
+  
+  position: fixed; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px 0;
+  width: 220px;
+  height:30px;
+
+  background: none;
+  border: 1px solid #0D6;
+  color: #0C5;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active 
+{
+  text-decoration: none;
+  color: white;
+  border-color: #0C5;
+  background: #0C5;
+  
+}
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.button span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -8px;
+
+  background: none;
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(225deg);
+}
+
+.button:hover span, .button:active span 
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: white;
+  right: 0;
+  top: 50%;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+
+    <script id="vs" type="x-shader/x-vertex">
+
+        varying vec2 vUv;
+
+        void main() {
+
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+        }
+
+    </script>
+
+    <script id="fs" type="x-shader/x-fragment">
+
+        uniform sampler2D map;
+
+        uniform vec3 fogColor;
+        uniform float fogNear;
+        uniform float fogFar;
+
+        varying vec2 vUv;
+
+        void main() {
+
+        float depth = gl_FragCoord.z / gl_FragCoord.w;
+        float fogFactor = smoothstep( fogNear, fogFar, depth );
+
+        gl_FragColor = texture2D( map, vUv );
+        gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+        gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+
+        }
+
+    </script>
+    
+    <div id="container" ></div>
+    <img id="tool" src="toolbar.png" />
+    
+    <img id="logo" src="logotrue.png" alt="The Apricity Project" onclick= "scroll(0, 0)"/>
+    <img id="halo" src="pinxyz.png" alt="The Apricity Project" />
+    <img id="title" src="text.png" alt="The Apricity Project" />
+    <h1 id="hook"> Hello, There. <br> <font color="#737373">(click)</font> </h1>
+    <a href="http://www.theapricityproject.org" target="_blank" id="fly" class="button">
+        <span>Join cause</span>
+    </a>
+    
+    <!--<div id="gradient"/>-->
+    
+   
+ 
+    <!-- #region shitpost -->
+    <!--<p style="margin-top:100%;">Hello! Look at my great content!</p>-->
+    <!-- #endregion -->
+
+
+    <script type="text/javascript">
+
+        if (!Detector.webgl) Detector.addGetWebGLMessage();
+
+        var container;
+        var camera, scene, renderer;
+        var mesh, geometry, material;
+
+        var mouseX = 0, mouseY = 0;
+        var start_time = Date.now();
+
+        var windowHalfX = window.innerWidth / 2;
+        var windowHalfY = window.innerHeight / 2;
+
+        init();
+        function randInt(min, max) {
+            return min + Math.floor((max - min + 1) * Math.random());
+        }
+        function ranArg(a){
+            return a[randInt(0, a.length-1)];
+        }
+
+        function isPercent(percent) {
+            return Math.random() < percent/100;
+        }
+
+        function appendHead(text, first) {
+            var el = document.createElement("p");
+            el.innerText = text;
+            el.className = "important";
+            
+            if (first) {
+                el.style.setProperty("margin-top", "75%");
+                
+            }
+            document.body.appendChild(el);
+        }
+
+        function appendText(text) {
+            var el = document.createElement("p");
+            el.innerText = text;
+            document.body.appendChild(el);
+        }
+
+        function appendVideo(source, auto) {
+            var el = document.createElement("video");
+            var sr = document.createElement("source");
+            sr.type = "video/mp4";
+            sr.src = source;
+            el.appendChild(sr);
+            el.className = "content";
+            el.controls = true;
+            if (auto) el.autoplay = true;
+            document.body.appendChild(el);
+        }
+
+        function appendVisual(source) {
+            if (source.includes(".mp4"))
+                appendVideo(source, false);
+            else
+                appendImage(source);
+        }
+
+        function appendImage(source) {
+            var el = document.createElement("img");
+            el.src = source;
+            el.className = "content";
+            document.body.appendChild(el);
+        }
+
+        function contentLoad() {
+            //window.alert("fd");
+            container = document.getElementById('container');
+            appendHead("Welcome to the future of web design! The content below is dynamically curated by a nueral network computer algorithm based on how YOU interact with the web page.", true);
+            appendHead("Before you join, you should learn just what TAP is. This video will get you started:", false);
+            appendVideo("The Apricity Project- Promotional Video.mp4", true);
+            appendHead("Press the button on the left when you're ready to join us. Happy helping! :)", false);
+            appendText("It’s a fact: being kind to others makes you happier. The #apricityproject is here to show you how doing nice things for others each day will bring great things to both our community and ourselves.");
+            appendText("Our whole lives, we search for happiness within ourselves - and that’s just the problem. Happiness isn't just found within ourselves; it's found beyond our own desires and dreams and achievements. Happiness lies in compassion, selflessness, and community. Putting other's needs before our own, going out of our way to help people, thinking of other people's happiness as equivalent to our own- this is how we feel truly, blissfully happy.");
+            appendVisual("pasted image 0.png");
+            appendText("Many agree that the purpose of life is happiness. But what is happiness? Not only is it influenced by our genes, upbringing, and external circumstances, but happiness is also influenced by factors we control: our personal attitudes, our approach to relationships, and our core values. Biologically, happiness is when chemicals such as endorphins, dopamine, oxytocin, and serotonin are released into the brain. As these chemicals spread, feelings commonly associated with happiness, such as excitement, joy or serenity, engulf the body. So what causes these chemicals to be released? Positive behavior.");
+            appendVisual("TAP Interview 4.mp4");
+            /*
+            var hax = document.createElement("p");
+            hax.innerText = "The content below is dynamically curated by a nueral network computer algorithm based on how you interact with the web page. Welcome to the future of web design!";
+            hax.style.setProperty("margin-top", "75%");
+            hax.className = "important";
+            //hax.style.setProperty("background", "#3F7FBF");
+            //hax.style.setProperty("color", "white");
+            var hax2 = document.createElement("p");
+            hax2.innerText = "Press the button on the left when you're ready to begin!";
+            hax2.className = "important";
+
+            var vid = document.createElement("video");
+            var vidSource = document.createElement("source");
+            vidSource.type = "video/mp4";
+            vidSource.src = "Presidente.mp4";
+            vid.appendChild(vidSource);
+            
+
+            
+            //vid.src = "Presidente.mp4";
+            vid.className = "content";
+            //vid.type = "video/mp4";
+            
+            document.body.appendChild(hax);
+            document.body.appendChild(hax2);
+            document.body.appendChild(vid);*/
+
+            //<p style="margin-top:100%;">Hello! Look at my great content!</p>
+            
+        }
+
+        function init() {
+            
+            container = document.getElementById('container');
+            
+
+            //
+
+            camera = new THREE.PerspectiveCamera(30, 1, 1, 3000);
+            camera.position.z = 6000;
+
+            scene = new THREE.Scene();
+
+            geometry = new THREE.Geometry();
+
+            var texture = THREE.ImageUtils.loadTexture('cloud10.png', null, animate);
+            texture.magFilter = THREE.LinearMipMapLinearFilter;
+            texture.minFilter = THREE.LinearMipMapLinearFilter;
+
+            var fog = new THREE.Fog(0x4584b4, -100, 3000);
+
+            material = new THREE.ShaderMaterial({
+
+                uniforms: {
+
+                    "map": { type: "t", value: texture },
+                    "fogColor": { type: "c", value: fog.color },
+                    "fogNear": { type: "f", value: fog.near },
+                    "fogFar": { type: "f", value: fog.far },
+
+                },
+                vertexShader: document.getElementById('vs').textContent,
+                fragmentShader: document.getElementById('fs').textContent,
+                depthWrite: false,
+                depthTest: false,
+                transparent: true
+
+            });
+
+            var plane = new THREE.Mesh(new THREE.PlaneGeometry(64, 64));
+
+            for (var i = 0; i < 8000; i++) {
+
+                plane.position.x = Math.random() * 1000 - 500;
+                plane.position.y = -Math.random() * Math.random() * 200 - 15;
+                plane.position.z = i;
+                plane.rotation.z = Math.random() * Math.PI;
+                plane.scale.x = plane.scale.y = Math.random() * Math.random() * 1.5 + 0.5;
+
+                THREE.GeometryUtils.merge(geometry, plane);
+
+            }
+
+            mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+
+            mesh = new THREE.Mesh(geometry, material);
+            mesh.position.z = -8000;
+            scene.add(mesh);
+
+            renderer = new THREE.WebGLRenderer({ antialias: false });
+            onWindowResize();
+            container.appendChild(renderer.domElement);
+
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+            window.addEventListener('resize', onWindowResize, false);
+            //$("body").css("overflow", "hidden");
+            
+        }
+
+        function onDocumentMouseMove(event) {
+
+            mouseX = (event.clientX - windowHalfX) * 0.025;
+            mouseY = (event.clientY - windowHalfY) * 0.15;
+
+        }
+
+        function onWindowResize(event) {
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+        }
+
+        function interpolate(initial, final, amount){
+            return initial + (final - initial) * amount;
+        }
+
+        function centeredposition(dimension, position) {
+            return position - dimension / 2;
+        }
+
+        var angles = [
+                "Oftentimes, people misinterpret happiness as a personal end goal or a simple destination. However, we tend to overlook the effects that positive behavior towards other people can have on us. Dalai Lama once stated that 'If you want others to be happy, demonstrate compassion. If you want to be happy, demonstrate compassion.'",
+                " The Greater Good Science Center at the University of California, Berkeley recently revealed research that shows that people benefit more from giving support than receiving it [1]. This occurs because the process of 'giving' activates areas in the brain associated with pleasure, social connection, and trust.",
+                "According to mental health expert Dr. David R. Hamilton, the hormone oxytocin is released when a person performs an act of kindness, which can lead to a healthier heart. Oxytocin then causes the release of a chemical known as nitric oxide, which dilates the blood vessels. By reducing blood pressure and stress, optimism and positive emotion provide protection against cardiovascular diseases like heart attacks and strokes, reducing risk by around 50% [2]. Basically, being kind will not only lead to a happier, healthier lifestyle, but it can literally save our lives.",
+                "Brain scans show that performing acts of kindness, biologically, is extremely similar to eating chocolate. Weird, right? Well, being compassionate stimulates the brain with the same feeling of satisfaction as eating chocolate does. ",
+                "When we donate to charity, the same pleasure centers light up as when we receive a gift, a phenomenon neuroscientists refer to as “the warm glow” effect [3].", 
+                "It’s not just you who will notice the difference; people are more likely to trust you if you are compassionate, and this trend carries on into social settings and the workplace.",
+                "In Dr. Sonja Lyubomirsky’s famous study, she asked students to go out of their way to perform five random acts of kindness each week for six weeks. Other students were asked to act how they ordinarily would for the same amount of time. By the end, the results indicated that those who performed the acts of kindness showed a 42% increase in happiness [4].",
+                "These acts of kindness aren’t always humongous gestures that, let’s face it, are pretty unrealistic for the average person. Even if we can’t donate a million dollars to end poverty in developing countries (no matter how awesome that would be), there are still endless ways that we can use our compassion to make a difference. All that matters is that it’s genuine consideration and thoughtfulness for another person.",
+                "As the Dalai Lama puts it, 'Be kind whenever possible. It is always possible.' So, there you have it. Kindness makes us happy. Kindness makes others happy. It all starts with you. So, what are you waiting for?",
+                "Believe it or not, kindness is more than just making someone else happy: kindness makes you happy! This phenomenon can be explained by a term known as cognitive dissonance, which is when an individual holds two or more conflicting beliefs. Due to cognitive dissonance, when we give someone a present or do something nice for them,our brain makes us feel that they are deserving of it, even if we didn’t think so before. This increases our ability to empathize with and feel more optimistic towards others, thus making us more positive people overall.",
+                "For example, studies have shown that spending money on others tends to make people happier than when they spend it on themselves [5].",
+                "It's no surprise then, that a 2010 Harvard Business School survey of happiness in 136 countries found that people who selflessly donated to charitable organizations were happiest overall [6].",
+                "This happy, elevated feeling we get when we perform an act of kindness can be credited to endogenous opioids, which are essentially the brain’s natural version of morphine and heroin. Endogenous opioids cause dopamine to be released into the brain, which causes a natural high, often referred to as 'Helper's High'. Helper’s High produces a sense of emotional warmth that engulfs the body.",
+                "Another chemical that plays a large role in creating this feeling is oxytocin. The release of oxytocin decreases inflammation and chemicals known to speed up the process of aging [7]. Who knew? Being kind can actually slow the aging process!",
+                "One of the most powerful aspects of kindness is that it’s contagious. When we are kind to someone, not only are we making their day or giving them some positivity in their life, but we are also inspiring them to be kind to others.",
+                "According to James Fowler, a professor of medical genetics and political science at the University of California, San Diego, people automatically become more inclined to help others after they are subjected to any form of kindness, which expands support networks for us and everyone around us. Recipients of kindness generally want to continue reciprocating these kind actions. Fowler's studies have demonstrated that a single act of kindness typically inspires several more acts of generosity. The scientific name for this chain of kindness is “upstream reciprocity” [8].", 
+                "Not only do our kind actions inspire others to practice compassion, but we also create a “positive feedback loop” between kindness and happiness where being kind to others makes us happier and being happier makes us more likely to do acts of kindness. Simply witnessing generosity alone can cause one to be inspired to do the same! By showing compassion to even one person, we can activate an entire cycle of kindness. How awesome is that?!", 
+                "Humans inherently want to demonstrate compassion, but in the end, turning this “want” into reality can sometimes be disregarded or ignored. Oftentimes, we don’t realize how much of an effect what we say and do can have on others. By simply holding open a door, complimenting someone, offering advice, or just being there to listen, we can completely alter a person’s outlook on life and give them just a little bit more hope for the future.",
+                "That's all! If you've made it this far, I think your ready to join the cause. Give it a click!"
+                
+        ];
+        var selfishness = [.5,1,1,.75,.75,1,.5,.25,.5,1,.75,.5,1,1,0,.25,.25,0, -1.5];
+        var visuals = [
+            "definition.png", "pie.png", "TAP Interview 3.mp4", "TAP Interview 2.mp4", "TAP Interview 1.mp4"
+        ];
+        var visualRelation = [0,6,11,13,16];
+
+        var d = new Date();
+        var lastTime = d.getTime();
+        //window.alert("p");
+        var lastPost = 0;
+        var userS = .5;
+        var total = 0;
+        var lastS = .5;
+        function expandDong() {
+            var d = new Date();
+            var dTime = Math.max(d.getTime() - lastTime, 1);
+            
+            lastTime = d.getTime();
+            total += dTime;
+            
+            userS = dTime / total * lastS + userS * (total - dTime) / total;
+            var best = 0;
+
+            for (i = 0; i < selfishness.length; i++) {
+                if (Math.abs(userS - selfishness[i]) < Math.abs(userS - selfishness[best])) {
+                    best = i;
+                }
+            }
+            if (selfishness[best] != -2) {
+                lastS = selfishness[best];
+                selfishness[best] = -2;
+                
+
+                window.alert(userS);
+
+                //var el;
+
+
+                appendText(angles[best]);
+                for (j = 0; j < visualRelation.length; j++) {
+                    if (visualRelation[j] == best) {
+                        appendVisual(visuals[j]);
+                        break;
+                    }
+                }
+
+
+
+
+                //appendImage();
+        }
+            
+        }
+
+        var degrees = 0;
+        function rotateAnimation(el, speed) {
+            var elem = document.getElementById(el);
+            if (navigator.userAgent.match("Chrome")) {
+                elem.style.WebkitTransform = "rotate(" + degrees + "deg)";
+            } else if (navigator.userAgent.match("Firefox")) {
+                elem.style.MozTransform = "rotate(" + degrees + "deg)";
+            } else if (navigator.userAgent.match("MSIE")) {
+                elem.style.msTransform = "rotate(" + degrees + "deg)";
+            } else if (navigator.userAgent.match("Opera")) {
+                elem.style.OTransform = "rotate(" + degrees + "deg)";
+            } else {
+                elem.style.transform = "rotate(" + degrees + "deg)";
+            }
+            looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+            degrees++;
+            if (degrees > 359) {
+                degrees = 1;
+            }
+        }
+        var states = ["Welcome to the Apricity Project!", "Our Mission is to Spread Happiness through Kindness.", "We Hope You'll Join Us. (:", "But before we get to the Acts of Kindess,", "Let's Cover the Facts."];
+        rotateAnimation("halo", 100);
+        var back = document.getElementById("container").style;
+        var logo = document.getElementById("logo").style;
+        var halo = document.getElementById("halo").style;
+        var toolbar = document.getElementById("tool").style;
+        var title = document.getElementById("title").style;
+        var button = document.getElementById("fly").style;
+        var hook = document.getElementById("hook");
+        //var top = document.getElementById("tip").style;
+        var intro = true;
+        var y;
+        var state = -1;
+        document.onclick = onC;
+        function onC() {
+            
+            if (intro) {
+                state++;
+                if (state == states.length) {
+                    intro = false;
+                    hook.parentNode.removeChild(hook);
+                    //scroll = top
+                    //$("body").css("overflow", "auto");
+                    contentLoad();
+                }
+                else {
+                    //window.alert(state);
+                    //fade out text
+                    
+                    //hook.innerHTML = states[state];
+                    var op = 1;  // initial opacity
+                    var inc = -.025;
+                    var timer = setInterval(function () {
+                        if (op <= 0.0) {
+                            inc *= -1;
+                            hook.innerHTML = states[state];
+                        }
+                        if (op > 1) {
+                            clearInterval(timer);
+                        }
+                        hook.style.opacity = op;
+                        op += inc;
+                    }, 10);
+
+                    
+                    //for (x = 11; x < 21; x++) window.setTimeout(function () { hook.style.opacity = Math.random();/*parseFloat(hook.style.opacity, 10) - 0.1;*/ }, 100 * x);
+                    //fade in text
+                }
+            }
+        }
+
+        
+        function pageHeight() {
+             var body = document.body,
+    html = document.documentElement;
+
+            var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                                   html.clientHeight, html.scrollHeight, html.offsetHeight);
+            return height;
+        }
+
+        function animate() {
+            
+            requestAnimationFrame(animate);
+            var y = window.scrollY;
+            if (intro) {
+                y = window.innerHeight;
+                
+            }
+
+            if (!intro && (y + window.innerHeight) / pageHeight() >= 1) {
+                expandDong();
+                //window.alert("shadow realm at 70");
+            }
+            
+            position = ((Date.now() - start_time) * 0.03) % 8000;
+            
+            var ratio = Math.min(y, window.innerHeight) / window.innerHeight;
+          
+            
+            back.opacity = interpolate(1, 0.5,ratio);
+
+            if (window.scrollY > window.innerHeight *1.45) {
+                
+                button.top = "7.5%";
+            }
+            else {
+                button.top = Math.round(window.innerHeight *(1.45 + .075) - window.scrollY)  + "px";
+            }
+
+            //button.top = Math.max(window.innerHeight / 2, window.innerHeight- y) + "px";
+            toolbar.height = Math.round(interpolate(0, 50, ratio)) + "px";//why so slow?
+            halo.opacity = interpolate(.20, 0, ratio);
+            halo.width = 2* window.innerWidth;
+            halo.height = halo.width;
+            title.width = interpolate(200, 1000, ratio) + "px";
+            title.height = title.width;
+            title.opacity = Math.pow(interpolate(1,0,ratio),2);
+            logo.width = interpolate(200, 50, ratio) + "px";
+            logo.height = logo.width;
+            logo.top = interpolate(window.innerHeight/2-100, 0, ratio) + "px";
+            //logo.left = window.innerWidth / 2 + "px";
+           
+            //toolbar.height = parseInt(toolbar.height,10) + (parseInt(toolbar.height,10) - interpolate(0, 50, ratio)) * .1 + "px";
+            mouseY = interpolate(windowHalfY * -0.05, windowHalfY *0.15, ratio);
+            camera.position.x += (mouseX - camera.position.x) * .1;
+            camera.position.y += (-mouseY - camera.position.y) * .1;
+            camera.position.z = -position + 8000;
+
+            renderer.render(scene, camera);
+
+            
+
+        }
+        
+
+    </script>
+</body>
+</html>

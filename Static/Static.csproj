@@ -23,6 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap.css" />
+    <Content Include="icon.png" />
+    <Content Include="logo.png" />
     <Content Include="js\thing.js" />
     <Content Include="libs\jquery-2.1.4.min.js" />
     <Content Include="libs\vis.css" />
