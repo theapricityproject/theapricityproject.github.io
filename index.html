@@ -305,23 +305,31 @@
 
     <script type="text/javascript">
         function browserSupportsWebGL() {
-            var canvas = document.getElementById('gltest');
-            var context = null; var names = ["webgl", "experimental-webgl", "webkit-3d", "moz-webgl"];
-            for (var i = 0; i < names.length; ++i) {
-                try { context = canvas.getContext(names[i]); }
-                catch (e) { }
-                if (context) { break; }
+            var canvas;
+            var ctx;
+            var exts;
+
+            try {
+                canvas = createElement('canvas');
+                ctx = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                exts = ctx.getSupportedExtensions();
             }
-            return context != null;
+            catch (e) {
+                return;
+            }
+
+            if (ctx !== undefined) {
+                return true;
+            }
+
+            canvas = undefined;
+            return false;
         }
 
-        if (screen.width <= 699) {
+        if (screen.width <= 699 || !browserSupportsWebGL()) {
             window.location = "http://m.theapricityproject.org";
         }
 
-        if (!browserSupportsWebGL()) {
-            window.location = "http://www.theapricityproject.org";
-        }
         if (!Detector.webgl) Detector.addGetWebGLMessage();
 
         var container;
