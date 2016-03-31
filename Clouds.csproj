@@ -23,7 +23,7 @@
     <Content Include="cloud10.png" />
     <Content Include="definition.png" />
     <Content Include="example.png" />
-    <Content Include="ficon.ico" />
+    <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="js\Detector.js" />
     <Content Include="js\three.min.js" />

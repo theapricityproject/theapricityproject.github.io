@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <link rel="shortcut icon" href="ficon.ico" type="image/x-icon" />
+
+    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />-->
     <title>The Apricity Project</title>
     <meta charset="utf-8">
     <style type="text/css">
@@ -18,12 +18,12 @@
             text-align: center;
         }
 
-        .important{
+        .important {
             background: #3F7FBF;
             color: white;
         }
 
-        p{ 
+        p {
             width: 33%;
             margin-left: auto;
             margin-right: auto;
@@ -46,45 +46,42 @@
             transition-duration: 0.3s;
             -webkit-transition-property: transform;
             transition-property: transform;
-            font-weight:normal;
+            font-weight: normal;
             background: #e0e0e0;
-            
             background-size: 200% 100%;
             background-position: right bottom;
-            padding:10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
             z-index: 1000;
-            
-            
         }
 
 
-        p:hover,p:focus,p:active {
--webkit-transform: scale(1.1);
-            transform: scale(1.1);        }
+            p:hover, p:focus, p:active {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
 
-        
+
         #logo {
-            position:fixed;
+            position: fixed;
             margin-left: auto;
             margin-right: auto;
             left: 0;
             right: 0;
-            
             z-index: 1000;
         }
+
         #title {
-            position:fixed;
+            position: fixed;
             margin-left: auto;
             margin-right: auto;
             left: 0;
             right: 0;
             pointer-events: none;
-            
             z-index: 10;
             top: 55%;
         }
 
-        .content{
+        .content {
             width: 33%;
             margin-left: auto;
             margin-right: auto;
@@ -94,71 +91,63 @@
             margin-top: 0px;
             z-index: 5;
             display: block;
-            height:auto;
+            height: auto;
         }
-        
+
         #halo {
-            position:fixed;
+            position: fixed;
             top: -9999px;
             bottom: -9999px;
             left: -9999px;
             right: -9999px;
             margin: auto;
-
-           
-            
             opacity: 0.1;
             left: 0;
             right: 0;
-            top:0;
-            bottom:0;
-            
+            top: 0;
+            bottom: 0;
             z-index: -100;
         }
 
-        #hook{
-            position:fixed;
+        #hook {
+            position: fixed;
             top: -9999px;
             bottom: -9999px;
             left: -9999px;
             right: -9999px;
             margin: auto;
-            margin-top:25%;
+            margin-top: 25%;
             font-family: 'Century Gothic';
             font-size: 30px;
-           
-            
-       
             left: 0;
             right: 0;
-            top:0;
-            bottom:0;
+            top: 0;
+            bottom: 0;
             z-index: 1000;
-
-
         }
+
         #tool {
-	        position: fixed;
+            position: fixed;
             border: none;
             width: 100%;
-	        height: 50px;
+            height: 50px;
             top: 0px;
-            right:0px;
-	        background: black;
+            right: 0px;
+            background: black;
             vertical-align: top;
             z-index: 100;
         }
-                
+
 
         #container {
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e4877+0,4584b4+100 */
             background: #1e4877; /* Old browsers */
-            background: -moz-linear-gradient(top,  hsl(212,60%,29%) 0%, hsl(206,45%,49%) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top,  hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom,  hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            background: -moz-linear-gradient(top, hsl(212,60%,29%) 0%, hsl(206,45%,49%) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, hsl(212,60%,29%) 0%,hsl(206,45%,49%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4877', endColorstr='#4584b4',GradientType=0 ); /* IE6-9 */
             width: 100%;
-            height:100%;
+            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
@@ -167,98 +156,96 @@
             margin: 0;
             border: 0;
             z-index: -100;
-            
         }
+
         @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
-body { font-family: "Nunito", sans-serif; font-size: 24px;}
-a    { text-decoration: none; }
-p    { text-align: center; }
-sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+        body {
+            font-family: "Nunito", sans-serif;
+            font-size: 24px;
+        }
 
-.button
-{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  color: none;
+        a {
+            text-decoration: none;
+        }
 
-  font-size: 24px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  
-  margin: 0% 20%;
-  
-  position: fixed; 
-  top:0; right:0; bottom:0; left:0;
-  
-  padding: 20px 0;
-  width: 220px;
-  height:30px;
+        p {
+            text-align: center;
+        }
 
-  background: none;
-  border: 1px solid #0D6;
-  color: #0C5;
-  overflow: hidden;
-  
-  transition: all 0.5s;
-}
+        sup {
+            font-size: 36px;
+            font-weight: 100;
+            line-height: 55px;
+        }
 
-.button:hover, .button:active 
-{
-  text-decoration: none;
-  color: white;
-  border-color: #0C5;
-  background: #0C5;
-  
-}
+        .button {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            color: none;
+            font-size: 24px;
+            font-family: "Nunito", sans-serif;
+            font-weight: 300;
+            margin: 0% 20%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px 0;
+            width: 220px;
+            height: 30px;
+            background: none;
+            border: 1px solid #0D6;
+            color: #0C5;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
 
-.button span 
-{
-  display: inline-block;
-  position: relative;
-  padding-right: 0;
-  
-  transition: padding-right 0.5s;
-}
+            .button:hover, .button:active {
+                text-decoration: none;
+                color: white;
+                border-color: #0C5;
+                background: #0C5;
+            }
 
-.button span:after 
-{
-  content: ' ';  
-  position: absolute;
-  top: 0;
-  right: -18px;
-  opacity: 0;
-  width: 10px;
-  height: 10px;
-  margin-top: -8px;
+            .button span {
+                display: inline-block;
+                position: relative;
+                padding-right: 0;
+                transition: padding-right 0.5s;
+            }
 
-  background: none;
-  border: 3px solid #FFF;
-  border-top: none;
-  border-right: none;
-  opacity: 0;
+                .button span:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 0;
+                    right: -18px;
+                    opacity: 0;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -8px;
+                    background: none;
+                    border: 3px solid #FFF;
+                    border-top: none;
+                    border-right: none;
+                    opacity: 0;
+                    transition: opacity 0.5s, top 0.5s, right 0.5s;
+                    transform: rotate(225deg);
+                }
 
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  transform: rotate(225deg);
-}
+            .button:hover span, .button:active span {
+                padding-right: 30px;
+            }
 
-.button:hover span, .button:active span 
-{
-  padding-right: 30px;
-}
-
-.button:hover span:after, .button:active span:after 
-{
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  opacity: 1;
-  border-color: white;
-  right: 0;
-  top: 50%;
-}
-
-
-        
+                .button:hover span:after, .button:active span:after {
+                    transition: opacity 0.5s, top 0.5s, right 0.5s;
+                    opacity: 1;
+                    border-color: white;
+                    right: 0;
+                    top: 50%;
+                }
     </style>
 </head>
 <body>
@@ -300,22 +287,19 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
         }
 
     </script>
-    
-    <div id="container" ></div>
+
+    <div id="container"></div>
     <img id="tool" src="toolbar.png" />
-    
-    <img id="logo" src="logotrue.png" alt="The Apricity Project" onclick= "scroll(0, 0)"/>
+
+    <img id="logo" src="logotrue.png" alt="The Apricity Project" onclick="scroll(0, 0)" />
     <img id="halo" src="pinxyz.png" alt="The Apricity Project" />
     <img id="title" src="text.png" alt="The Apricity Project" />
     <h1 id="hook"> Hello, There. <br> <font color="#737373">(click)</font> </h1>
     <a href="http://www.theapricityproject.org" target="_blank" id="fly" class="button">
         <span>Join cause</span>
     </a>
-    
+
     <!--<div id="gradient"/>-->
-    
-   
- 
     <!-- #region shitpost -->
     <!--<p style="margin-top:100%;">Hello! Look at my great content!</p>-->
     <!-- #endregion -->
@@ -339,22 +323,22 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
         function randInt(min, max) {
             return min + Math.floor((max - min + 1) * Math.random());
         }
-        function ranArg(a){
-            return a[randInt(0, a.length-1)];
+        function ranArg(a) {
+            return a[randInt(0, a.length - 1)];
         }
 
         function isPercent(percent) {
-            return Math.random() < percent/100;
+            return Math.random() < percent / 100;
         }
 
         function appendHead(text, first) {
             var el = document.createElement("p");
             el.innerText = text;
             el.className = "important";
-            
+
             if (first) {
                 el.style.setProperty("margin-top", "75%");
-                
+
             }
             document.body.appendChild(el);
         }
@@ -419,25 +403,25 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
             vidSource.type = "video/mp4";
             vidSource.src = "Presidente.mp4";
             vid.appendChild(vidSource);
-            
 
-            
+
+
             //vid.src = "Presidente.mp4";
             vid.className = "content";
             //vid.type = "video/mp4";
-            
+
             document.body.appendChild(hax);
             document.body.appendChild(hax2);
             document.body.appendChild(vid);*/
 
             //<p style="margin-top:100%;">Hello! Look at my great content!</p>
-            
+
         }
 
         function init() {
-            
+
             container = document.getElementById('container');
-            
+
 
             //
 
@@ -500,7 +484,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
             document.addEventListener('mousemove', onDocumentMouseMove, false);
             window.addEventListener('resize', onWindowResize, false);
             //$("body").css("overflow", "hidden");
-            
+
         }
 
         function onDocumentMouseMove(event) {
@@ -519,7 +503,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
 
         }
 
-        function interpolate(initial, final, amount){
+        function interpolate(initial, final, amount) {
             return initial + (final - initial) * amount;
         }
 
@@ -532,7 +516,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
                 " The Greater Good Science Center at the University of California, Berkeley recently revealed research that shows that people benefit more from giving support than receiving it [1]. This occurs because the process of 'giving' activates areas in the brain associated with pleasure, social connection, and trust.",
                 "According to mental health expert Dr. David R. Hamilton, the hormone oxytocin is released when a person performs an act of kindness, which can lead to a healthier heart. Oxytocin then causes the release of a chemical known as nitric oxide, which dilates the blood vessels. By reducing blood pressure and stress, optimism and positive emotion provide protection against cardiovascular diseases like heart attacks and strokes, reducing risk by around 50% [2]. Basically, being kind will not only lead to a happier, healthier lifestyle, but it can literally save our lives.",
                 "Brain scans show that performing acts of kindness, biologically, is extremely similar to eating chocolate. Weird, right? Well, being compassionate stimulates the brain with the same feeling of satisfaction as eating chocolate does. ",
-                "When we donate to charity, the same pleasure centers light up as when we receive a gift, a phenomenon neuroscientists refer to as “the warm glow” effect [3].", 
+                "When we donate to charity, the same pleasure centers light up as when we receive a gift, a phenomenon neuroscientists refer to as “the warm glow” effect [3].",
                 "It’s not just you who will notice the difference; people are more likely to trust you if you are compassionate, and this trend carries on into social settings and the workplace.",
                 "In Dr. Sonja Lyubomirsky’s famous study, she asked students to go out of their way to perform five random acts of kindness each week for six weeks. Other students were asked to act how they ordinarily would for the same amount of time. By the end, the results indicated that those who performed the acts of kindness showed a 42% increase in happiness [4].",
                 "These acts of kindness aren’t always humongous gestures that, let’s face it, are pretty unrealistic for the average person. Even if we can’t donate a million dollars to end poverty in developing countries (no matter how awesome that would be), there are still endless ways that we can use our compassion to make a difference. All that matters is that it’s genuine consideration and thoughtfulness for another person.",
@@ -543,17 +527,17 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
                 "This happy, elevated feeling we get when we perform an act of kindness can be credited to endogenous opioids, which are essentially the brain’s natural version of morphine and heroin. Endogenous opioids cause dopamine to be released into the brain, which causes a natural high, often referred to as 'Helper's High'. Helper’s High produces a sense of emotional warmth that engulfs the body.",
                 "Another chemical that plays a large role in creating this feeling is oxytocin. The release of oxytocin decreases inflammation and chemicals known to speed up the process of aging [7]. Who knew? Being kind can actually slow the aging process!",
                 "One of the most powerful aspects of kindness is that it’s contagious. When we are kind to someone, not only are we making their day or giving them some positivity in their life, but we are also inspiring them to be kind to others.",
-                "According to James Fowler, a professor of medical genetics and political science at the University of California, San Diego, people automatically become more inclined to help others after they are subjected to any form of kindness, which expands support networks for us and everyone around us. Recipients of kindness generally want to continue reciprocating these kind actions. Fowler's studies have demonstrated that a single act of kindness typically inspires several more acts of generosity. The scientific name for this chain of kindness is “upstream reciprocity” [8].", 
-                "Not only do our kind actions inspire others to practice compassion, but we also create a “positive feedback loop” between kindness and happiness where being kind to others makes us happier and being happier makes us more likely to do acts of kindness. Simply witnessing generosity alone can cause one to be inspired to do the same! By showing compassion to even one person, we can activate an entire cycle of kindness. How awesome is that?!", 
+                "According to James Fowler, a professor of medical genetics and political science at the University of California, San Diego, people automatically become more inclined to help others after they are subjected to any form of kindness, which expands support networks for us and everyone around us. Recipients of kindness generally want to continue reciprocating these kind actions. Fowler's studies have demonstrated that a single act of kindness typically inspires several more acts of generosity. The scientific name for this chain of kindness is “upstream reciprocity” [8].",
+                "Not only do our kind actions inspire others to practice compassion, but we also create a “positive feedback loop” between kindness and happiness where being kind to others makes us happier and being happier makes us more likely to do acts of kindness. Simply witnessing generosity alone can cause one to be inspired to do the same! By showing compassion to even one person, we can activate an entire cycle of kindness. How awesome is that?!",
                 "Humans inherently want to demonstrate compassion, but in the end, turning this “want” into reality can sometimes be disregarded or ignored. Oftentimes, we don’t realize how much of an effect what we say and do can have on others. By simply holding open a door, complimenting someone, offering advice, or just being there to listen, we can completely alter a person’s outlook on life and give them just a little bit more hope for the future.",
                 "That's all! If you've made it this far, I think your ready to join the cause. Give it a click!"
-                
+
         ];
-        var selfishness = [.5,1,1,.75,.75,1,.5,.25,.5,1,.75,.5,1,1,0,.25,.25,0, -1.5];
+        var selfishness = [.5, 1, 1, .75, .75, 1, .5, .25, .5, 1, .75, .5, 1, 1, 0, .25, .25, 0, -1.5];
         var visuals = [
             "definition.png", "pie.png", "TAP Interview 3.mp4", "TAP Interview 2.mp4", "TAP Interview 1.mp4"
         ];
-        var visualRelation = [0,6,11,13,16];
+        var visualRelation = [0, 6, 11, 13, 16];
 
         var d = new Date();
         var lastTime = d.getTime();
@@ -565,10 +549,10 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
         function expandDong() {
             var d = new Date();
             var dTime = Math.max(d.getTime() - lastTime, 1);
-            
+
             lastTime = d.getTime();
             total += dTime;
-            
+
             userS = dTime / total * lastS + userS * (total - dTime) / total;
             var best = 0;
 
@@ -580,7 +564,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
             if (selfishness[best] != -2) {
                 lastS = selfishness[best];
                 selfishness[best] = -2;
-                
+
 
                 //window.alert(userS);
                 //I am a real pr0garamer!!! l00kz at.  doShit(&lol);
@@ -599,8 +583,8 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
 
 
                 //appendImage();
-        }
-            
+            }
+
         }
 
         var degrees = 0;
@@ -638,7 +622,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
         var state = -1;
         document.onclick = onC;
         function onC() {
-            
+
             if (intro) {
                 state++;
                 if (state == states.length) {
@@ -651,7 +635,7 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
                 else {
                     //window.alert(state);
                     //fade out text
-                    
+
                     //hook.innerHTML = states[state];
                     var op = 1;  // initial opacity
                     var inc = -.025;
@@ -667,77 +651,77 @@ sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
                         op += inc;
                     }, 10);
 
-                    
+
                     //for (x = 11; x < 21; x++) window.setTimeout(function () { hook.style.opacity = Math.random();/*parseFloat(hook.style.opacity, 10) - 0.1;*/ }, 100 * x);
                     //fade in text
                 }
             }
         }
 
-        
-        function pageHeight() {
-             var body = document.body,
-    html = document.documentElement;
 
-            var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        function pageHeight() {
+            var body = document.body,
+   html = document.documentElement;
+
+            var height = Math.max(body.scrollHeight, body.offsetHeight,
                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
             return height;
         }
 
         function animate() {
-            
+
             requestAnimationFrame(animate);
             var y = window.scrollY;
             if (intro) {
                 y = window.innerHeight;
-                
+
             }
 
             if (!intro && (y + window.innerHeight) / pageHeight() >= 1) {
                 expandDong();
                 //window.alert("shadow realm at 70");
             }
-            
-            position = ((Date.now() - start_time) * 0.03) % 8000;
-            
-            var ratio = Math.min(y, window.innerHeight) / window.innerHeight;
-          
-            
-            back.opacity = interpolate(1, 0.5,ratio);
 
-            if (window.scrollY > window.innerHeight *1.45) {
-                
+            position = ((Date.now() - start_time) * 0.03) % 8000;
+
+            var ratio = Math.min(y, window.innerHeight) / window.innerHeight;
+
+
+            back.opacity = interpolate(1, 0.5, ratio);
+
+            if (window.scrollY > window.innerHeight * 1.45) {
+
                 button.top = "7.5%";
             }
             else {
-                button.top = Math.round(window.innerHeight *(1.45 + .075) - window.scrollY)  + "px";
+                button.top = Math.round(window.innerHeight * (1.45 + .075) - window.scrollY) + "px";
             }
 
             //button.top = Math.max(window.innerHeight / 2, window.innerHeight- y) + "px";
             toolbar.height = Math.round(interpolate(0, 50, ratio)) + "px";//why so slow?
             halo.opacity = interpolate(.20, 0, ratio);
-            halo.width = 2* window.innerWidth;
+            halo.width = 2 * window.innerWidth;
             halo.height = halo.width;
             title.width = interpolate(200, 1000, ratio) + "px";
             title.height = title.width;
-            title.opacity = Math.pow(interpolate(1,0,ratio),2);
+            title.opacity = Math.pow(interpolate(1, 0, ratio), 2);
             logo.width = interpolate(200, 50, ratio) + "px";
             logo.height = logo.width;
-            logo.top = interpolate(window.innerHeight/2-100, 0, ratio) + "px";
+            logo.top = interpolate(window.innerHeight / 2 - 100, 0, ratio) + "px";
             //logo.left = window.innerWidth / 2 + "px";
-           
+
             //toolbar.height = parseInt(toolbar.height,10) + (parseInt(toolbar.height,10) - interpolate(0, 50, ratio)) * .1 + "px";
-            mouseY = interpolate(windowHalfY * -0.05, windowHalfY *0.15, ratio);
+            mouseY = interpolate(windowHalfY * -0.05, windowHalfY * 0.15, ratio);
             camera.position.x += (mouseX - camera.position.x) * .1;
             camera.position.y += (-mouseY - camera.position.y) * .1;
             camera.position.z = -position + 8000;
 
             renderer.render(scene, camera);
 
-            
+
 
         }
-        
+
 
     </script>
 </body>
