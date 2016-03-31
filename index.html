@@ -304,7 +304,7 @@
 
 
     <script type="text/javascript">
-        window.alert("to date");
+        
         function browserSupportsWebGL() {
             if (!!window.WebGLRenderingContext) {
                 var canvas = document.createElement("canvas"),
@@ -325,13 +325,13 @@
                 return false;
             }
 
-            //WebGL not supported
+            //WebGL not supportedwindo
             return false;
         }
 
         if (screen.width <= 699 || !browserSupportsWebGL()) {
-            //window.location = "http://m.theapricityproject.org";
-            window.alert("redirect");
+            window.location = "http://m.theapricityproject.org";
+            
         }
 
         if (!Detector.webgl) Detector.addGetWebGLMessage();
