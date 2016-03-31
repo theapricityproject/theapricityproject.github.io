@@ -37,6 +37,11 @@
     <Content Include="TAP Interview 4.mp4" />
     <Content Include="text.png" />
     <Content Include="The Apricity Project- Promotional Video.mp4" />
+    <Content Include="timestamp.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timestamp.tt</DependentUpon>
+    </Content>
     <Content Include="toolbar.png" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -44,12 +49,19 @@
     <TypeScriptCompile Include="app.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="timestamp.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>timestamp.txt</LastGenOutput>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
