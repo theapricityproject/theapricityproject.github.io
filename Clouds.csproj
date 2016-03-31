@@ -42,6 +42,7 @@
     <Content Include="TAP Interview 4.mp4" />
     <Content Include="text.png" />
     <Content Include="The Apricity Project- Promotional Video.mp4" />
+    <Content Include="thumb.png" />
     <Content Include="timestamp.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

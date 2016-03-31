@@ -292,7 +292,7 @@
     <img id="logo" src="logotrue.png" alt="The Apricity Project" onclick="scroll(0, 0)" />
     <img id="halo" src="pinxyz.png" alt="The Apricity Project" />
     <img id="title" src="text.png" alt="The Apricity Project" />
-    <h1 id="hook"> Hey, there! <br> <font color="#737373">(click)</font> </h1>
+    <h1 id="hook"> Hey there! <br> <font color="#737373">(click)</font> </h1>
     <a href="http://www.theapricityproject.org/#!join-the-cause/jlafu" target="_blank" id="fly" class="button">
         <span>Join cause</span>
     </a>
@@ -304,8 +304,23 @@
 
 
     <script type="text/javascript">
+        function browserSupportsWebGL() {
+            var canvas = document.getElementById('gltest');
+            var context = null; var names = ["webgl", "experimental-webgl", "webkit-3d", "moz-webgl"];
+            for (var i = 0; i < names.length; ++i) {
+                try { context = canvas.getContext(names[i]); }
+                catch (e) { }
+                if (context) { break; }
+            }
+            return context != null;
+        }
+
         if (screen.width <= 699) {
             window.location = "http://m.theapricityproject.org";
+        }
+
+        if (!browserSupportsWebGL()) {
+            window.location = "http://www.theapricityproject.org";
         }
         if (!Detector.webgl) Detector.addGetWebGLMessage();
 
@@ -357,7 +372,7 @@
             el.appendChild(sr);
             el.className = "content";
             el.controls = true;
-            if (auto) el.autoplay = true;
+            if (auto) el.poster = "thumb.png";
             document.body.appendChild(el);
         }
 
