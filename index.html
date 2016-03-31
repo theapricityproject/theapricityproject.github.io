@@ -195,8 +195,8 @@
             width: 220px;
             height: 30px;
             background: none;
-            border: 1px solid #0D6;
-            color: #0C5;
+            border: 1px solid #FF8D05;
+            color: #FF8D05; 
             overflow: hidden;
             transition: all 0.5s;
         }
@@ -204,8 +204,8 @@
             .button:hover, .button:active {
                 text-decoration: none;
                 color: white;
-                border-color: #0C5;
-                background: #0C5;
+                border-color: #FF8D05;
+                background: #FF8D05;
             }
 
             .button span {
@@ -293,7 +293,7 @@
     <img id="halo" src="pinxyz.png" alt="The Apricity Project" />
     <img id="title" src="text.png" alt="The Apricity Project" />
     <h1 id="hook"> Hello, There. <br> <font color="#737373">(click)</font> </h1>
-    <a href="http://www.theapricityproject.org" target="_blank" id="fly" class="button">
+    <a href="http://www.theapricityproject.org/#!join-the-cause/jlafu" target="_blank" id="fly" class="button">
         <span>Join cause</span>
     </a>
 
@@ -607,7 +607,7 @@
                 degrees = 1;
             }
         }
-        var states = ["Welcome to the Apricity Project!", "Our Mission is to Spread Happiness through Kindness.", "We Hope You'll Join Us. (:", "Before then, we'll cover the facts.", "Let's Begin."];
+        var states = ["Welcome to the Apricity Project!", "Our mission is to spread Happiness through Kindness.", "We hope you'll join us! (:", "Until then, we'll get you up to speed.", "Let's begin."];
         rotateAnimation("halo", 100);
         var back = document.getElementById("container").style;
         var logo = document.getElementById("logo").style;
@@ -691,10 +691,10 @@
 
             if (window.scrollY > window.innerHeight * 1.45) {
 
-                button.top = "7.5%";
+                button.top = "65px";
             }
             else {
-                button.top = Math.round(window.innerHeight * (1.45 + .075) - window.scrollY) + "px";
+                button.top = Math.round(window.innerHeight * (1.45) + 65 - window.scrollY) + "px";
             }
             button.left = .33 * window.innerWidth - 250 + "px";
 
