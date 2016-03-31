@@ -330,7 +330,8 @@
         }
 
         if (screen.width <= 699 || !browserSupportsWebGL()) {
-            window.location = "http://m.theapricityproject.org";
+            //window.location = "http://m.theapricityproject.org";
+            window.alert("redirect");
         }
 
         if (!Detector.webgl) Detector.addGetWebGLMessage();
