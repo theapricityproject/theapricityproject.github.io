@@ -347,7 +347,8 @@
 
         init();
         if (screen.width <= 699 || !browserSupportsWebGL()) {
-            window.location = "http://m.theapricityproject.org";
+            window.alert("would redirect");
+            //window.location = "http://m.theapricityproject.org";
 
         }
         function randInt(min, max) {
@@ -697,6 +698,8 @@
                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
             return height;
         }
+
+        
 
         function Yscroll() {
 
